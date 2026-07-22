@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kushagra Maurya — Cybersecurity · AI · Software</title>
+  <meta name="description" content="Kushagra Maurya — Core OEM Developer | Cybersecurity Specialist | Full-Stack Developer" />
+
+  <link rel="icon" href="favicon.ico" />
+  
+  <!-- Open Graph (IMPORTANT for preview) -->
+  <meta property="og:title" content="Kushagra Maurya — Cybersecurity · AI · Software" />
+  <meta property="og:description" content="Explore my portfolio, projects, and tech work." />
+  <meta property="og:image" content="https://kusgr.github.io/p/preview.jpg" />
+  <meta property="og:url" content="https://kusgr.github.io/p/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Preview -->
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Grain Noise -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">KM<span class="accent-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#mind">Mind</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="#about"          class="drawer-link">About</a></li>
+      <li><a href="#skills"         class="drawer-link">Skills</a></li>
+      <li><a href="#projects"       class="drawer-link">Projects</a></li>
+      <li><a href="#certifications" class="drawer-link">Certifications</a></li>
+      <li><a href="#mind"           class="drawer-link">Mind</a></li>
+      <li><a href="#contact"        class="drawer-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="orb orb-blue"   aria-hidden="true"></div>
+    <div class="orb orb-purple" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-label">
+        <span class="label-line"></span>
+        Android &middot; Cybersecurity &middot; AI
+      </p>
+
+      <p class="hero-bio">
+        Building systems that think, defend, and create real impact.
+      </p>
+
+      <h1 class="hero-name">
+        Kushagra<br />
+        <span class="name-outline">Maurya</span>
+      </h1>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Three sides<br />of the same mind.</h2>
+      </div>
+
+      <div class="bio-strip reveal">
+        <p>
+          I'm a <strong>3rd-year B.Tech Biotechnology</strong> student at RR Institute of Modern Technology with a
+          unique "T-shaped" skillset bridging biological sciences, advanced software engineering, and digital media.
+          As a <strong>Core OEM Developer (Team MST)</strong>, I've contributed to <em>Corvus OS, Havoc OS,
+          Cherish OS, and Evolution X</em> — specialising in kernel enhancement (TRB, Darkonah), system-level
+          tweaking, GApps customisation, and QA. Beyond code, I lead technical communities, direct media
+          strategies, and explore the cutting edge of Cybersecurity &amp; AI.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="card-icon-wrap"><i class="ph ph-brain card-icon"></i></div>
+          <h3 class="card-title">Thinker</h3>
+          <p class="card-sub">Psychology &amp; Philosophy</p>
+          <p class="card-desc">Deconstructs human behaviour to understand systems people build — and break. A Mid-Bencher who values concepts over rote memorisation.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="about-card reveal" style="--delay:.1s">
+          <div class="card-icon-wrap"><i class="ph ph-device-mobile card-icon"></i></div>
+          <h3 class="card-title">Builder</h3>
+          <p class="card-sub">Android · Cybersecurity · AI</p>
+          <p class="card-desc">Engineers custom ROMs, writes ethical exploits, shapes AI-powered tools, and formulates real-world biotech solutions.</p>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="about-card reveal" style="--delay:.2s">
+          <div class="card-icon-wrap"><i class="ph ph-lightning card-icon"></i></div>
+          <h3 class="card-title">Operator</h3>
+          <p class="card-sub">Community · Media · Execution</p>
+          <p class="card-desc">Founded and led multiple technical groups, headed media teams for multi-level organisations, and turns complexity into clarity fast.</p>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+
+      <div class="competencies reveal" style="--delay:.1s">
+        <div class="comp-item"><i class="ph ph-device-mobile-camera"></i><span>Android Engineering</span></div>
+        <div class="comp-item"><i class="ph ph-shield-check"></i><span>Cybersecurity &amp; AI</span></div>
+        <div class="comp-item"><i class="ph ph-flask"></i><span>Biotechnology</span></div>
+        <div class="comp-item"><i class="ph ph-megaphone"></i><span>Media Strategy</span></div>
+        <div class="comp-item"><i class="ph ph-users-three"></i><span>Community Leadership</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">What I work with.</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <i class="ph ph-shield-slash skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Cybersecurity</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Ethical Hacking</span>           <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">OSINT</span>                     <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Vulnerability Assessment</span>  <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">SOC / Incident Response</span>   <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">AI Red Teaming</span>            <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">Security Architecture</span>     <span class="skill-badge learning">Learning</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.1s">
+          <div class="skill-card-header">
+            <i class="ph ph-device-mobile skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Android Engineering</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Custom ROM Development</span>    <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Kernel Enhancement</span>        <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Quality Assurance (QA)</span>    <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">GApps Customisation</span>       <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Bootloader / Fastboot</span>     <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">Play Integrity Fixes</span>      <span class="skill-badge working">Working</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.2s">
+          <div class="skill-card-header">
+            <i class="ph ph-robot skill-cat-icon"></i>
+            <h3 class="skill-cat-title">AI &amp; Development</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Prompt Engineering</span>        <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">LLM Stress Testing</span>        <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">HTML / CSS / JavaScript</span>   <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">Python</span>                    <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">AI Agent Workflows</span>        <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">DevOps / CI/CD</span>            <span class="skill-badge learning">Learning</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.3s">
+          <div class="skill-card-header">
+            <i class="ph ph-palette skill-cat-icon"></i>
+            <h3 class="skill-cat-title">Media &amp; Design</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span class="skill-name">Canva / Figma</span>             <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Social Media Strategy</span>     <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Visual Communication</span>      <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Brand Identity</span>            <span class="skill-badge working">Working</span></li>
+            <li><span class="skill-name">Community Management</span>      <span class="skill-badge comfortable">Comfortable</span></li>
+            <li><span class="skill-name">Tech Writing</span>              <span class="skill-badge working">Working</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Things I've built.</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Android Keylogger -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="ph ph-keyboard project-icon"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="Code"><i class="ph ph-github-logo"></i></a>
+            </div>
+          </div>
+          <span class="project-category">Android · Security Research</span>
+          <h3 class="project-title">Android Keylogger</h3>
+          <p class="project-desc">A research-purpose Android keylogger that captures keystrokes at the system level, demonstrating input vulnerability surfaces in mobile operating systems and informing defensive hardening strategies.</p>
+          <div class="project-tags">
+            <span class="tag">Android</span>
+            <span class="tag">Java</span>
+            <span class="tag">ADB</span>
+            <span class="tag">Security Research</span>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+        <!-- Project 2: Vitamin E Serum -->
+        <article class="project-card project-card--bio reveal" style="--delay:.12s">
+          <div class="project-top">
+            <div class="project-icon-wrap project-icon-wrap--green">
+              <i class="ph ph-flask project-icon project-icon--green"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kusgr/portfolio/blob/main/MINI-PROJECT.pdf" class="project-link" title="Report"><i class="ph ph-file-pdf"></i></a>
+            </div>
+          </div>
+          <span class="project-category">Biotechnology · Cosmetic Science</span>
+          <h3 class="project-title">Homemade Vitamin E Face Serum</h3>
+          <p class="project-desc">Formulated and evaluated a DIY Vitamin E face serum (B.Tech Mini Project). Using Evion capsules, aloe vera gel, glycerine &amp; rose water — studied physical properties, preparation method, safety protocols, and real-world applications.</p>
+          <div class="project-tags">
+            <span class="tag tag--bio">B.Tech Biotech</span>
+            <span class="tag tag--bio">Cosmetic Formulation</span>
+            <span class="tag tag--bio">Lab Research</span>
+            <span class="tag tag--bio">Antioxidants</span>
+          </div>
+          <div class="project-card-glow project-card-glow--green"></div>
+        </article>
+
+        <!-- Project 3: YojanaBot -->
+        <article class="project-card reveal" style="--delay:.24s">
+          <div class="project-top">
+            <div class="project-icon-wrap">
+              <i class="ph ph-chats-circle project-icon"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://kusgr.github.io/yojanabot-ai-bharat/" class="project-link" title="Live Demo"><i class="ph ph-arrow-square-out"></i></a>
+              <a href="https://github.com/kusgr/yojanabot-ai-bharat" class="project-link" title="Code"><i class="ph ph-github-logo"></i></a>
+            </div>
+          </div>
+          <span class="project-category">AI · Civic Tech · Multilingual</span>
+          <h3 class="project-title">YojanaBot</h3>
+          <p class="project-desc">Millions of Indians miss government scheme benefits due to language barriers. YojanaBot is a multilingual AI chatbot (Hindi + English) with voice input that recommends schemes based on individual user needs — bridging India's awareness gap.</p>
+          <div class="project-tags">
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">JSON Dataset</span>
+            <span class="tag">Rule-based AI</span>
+            <span class="tag">Voice Input 🎤</span>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Certifications</span>
+        <h2 class="section-title">Always learning.</h2>
+      </div>
+
+      <!-- Scrolling ticker -->
+      <div class="ticker-wrapper reveal">
+        <div class="ticker-track">
+          <div class="ticker-content" id="tickerContent">
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Google · Foundations of Cybersecurity</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Deloitte Australia · Cyber</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Security &amp; Ethical Hacking: Web &amp; AI</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity for Everyone · Coursera</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> DevOps Foundation · Infosys Springboard</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Tata Cybersecurity Analyst · Forage</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Advanced Cyber Security · Great Learning</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity Fundamentals · IBM</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Prompt Engineering Bootcamp · LetsUpgrade</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Figma Bootcamp · LetsUpgrade</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> HTML &amp; CSS Bootcamp · LetsUpgrade</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Career Essentials in GitHub · LinkedIn</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Security Architecture · LinkedIn Learning</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Canva Bootcamp · LetsUpgrade</span>
+            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity Foundations · PMI &amp; NASBA &amp; IBM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--blue"></div>
+            <span class="cert-issuer">Coursera · Google</span>
+            <span class="cert-date">Jan 2026</span>
+          </div>
+          <h4 class="cert-name">Foundations of Cybersecurity</h4>
+          <p class="cert-skills">Cybersecurity · Network Security · +3 skills</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/ZSWTETMKY145" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.05s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--purple"></div>
+            <span class="cert-issuer">Forage · Deloitte Australia</span>
+            <span class="cert-date">Jan 2026</span>
+          </div>
+          <h4 class="cert-name">Cyber — Deloitte Australia</h4>
+          <p class="cert-skills">Computer Networking · Log Analysis · +1 skill</p>
+          <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_rTFnRMmyKHorrT3MS_1767390738695_completion_certificate.pdf" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.1s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--blue"></div>
+            <span class="cert-issuer">Coursera</span>
+            <span class="cert-date">Dec 2025</span>
+          </div>
+          <h4 class="cert-name">Security &amp; Ethical Hacking: Web &amp; AI</h4>
+          <p class="cert-skills">AI Red Teaming · Prompt Injection · +3 skills</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/2U0KPMLP7DWV" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.15s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--blue"></div>
+            <span class="cert-issuer">Coursera</span>
+            <span class="cert-date">Dec 2025</span>
+          </div>
+          <h4 class="cert-name">Cybersecurity for Everyone</h4>
+          <p class="cert-skills">Security Awareness · Cybersecurity Policy · +4 skills</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/7LKQ1OWYDR86?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.2s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--orange"></div>
+            <span class="cert-issuer">Infosys Springboard</span>
+            <span class="cert-date">Dec 2025</span>
+          </div>
+          <h4 class="cert-name">DevOps Foundation Certification</h4>
+          <p class="cert-skills">DevOps · CI/CD · +4 skills</p>
+          <a href="https://infyspringboard.onwingspan.com/web/assets/library/pdfjs-2.14.305-dist/web/viewer.html?file=https%3A%2F%2Finfyspringboard.onwingspan.com%2Fpublic-assets%2Finfosysheadstart%2Fcert%2Flex_auth_01365304330648780889_shared%2F1-7ae77bb4-10d7-4c19-bdc5-08c21cb34291.pdf#zoom=page-width&page=1" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.25s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--purple"></div>
+            <span class="cert-issuer">Forage · Tata</span>
+            <span class="cert-date">Jul 2025</span>
+          </div>
+          <h4 class="cert-name">Cybersecurity Analyst</h4>
+          <p class="cert-skills">SOC · Incident Response · +4 skills</p>
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_rTFnRMmyKHorrT3MS_1751364224320_completion_certificate.pdf" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.1s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--orange"></div>
+            <span class="cert-issuer">LetsUpgrade</span>
+            <span class="cert-date">Nov 2024</span>
+          </div>
+          <h4 class="cert-name">Prompt Engineering Bootcamp</h4>
+          <p class="cert-skills">Prompt Engineering · Generative AI · +3 skills</p>
+          <a href="https://verify.letsupgrade.in/certificate/LUEPEOCT124745" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.15s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--orange"></div>
+            <span class="cert-issuer">LetsUpgrade</span>
+            <span class="cert-date">Nov 2024</span>
+          </div>
+          <h4 class="cert-name">Figma Bootcamp</h4>
+          <p class="cert-skills">Figma · Prototyping · +3 skills</p>
+          <a href="https://verify.letsupgrade.in/certificate/LUEFGSEP1241234" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.2s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--blue"></div>
+            <span class="cert-issuer">IBM</span>
+            <span class="cert-date">Aug 2024</span>
+          </div>
+          <h4 class="cert-name">Cybersecurity Fundamentals</h4>
+          <p class="cert-skills">Information Security · Network Security · +3 skills</p>
+          <a href="https://www.credly.com/badges/585a8498-2a53-4ad3-8d95-2704b96c28bb" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.25s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--purple"></div>
+            <span class="cert-issuer">Great Learning</span>
+            <span class="cert-date">Sep 2024</span>
+          </div>
+          <h4 class="cert-name">Advanced Cyber Security — Threats &amp; Governance</h4>
+          <p class="cert-skills">Security Governance · GRC · +4 skills</p>
+          <a href="https://www.mygreatlearning.com/certificate/IOFSAFJJ" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.1s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--blue"></div>
+            <span class="cert-issuer">LinkedIn Learning</span>
+            <span class="cert-date">Sep 2024</span>
+          </div>
+          <h4 class="cert-name">Cybersecurity Foundations: Security Architecture</h4>
+          <p class="cert-skills">Security Architecture · Threat Modeling · +3 skills</p>
+          <a href="https://www.linkedin.com/learning/certificates/41d43dde9c80a0cd39ec7900cc21f32892848b5487a995676e05e23438bdcde7" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.15s">
+          <div class="cert-card-top">
+            <div class="cert-dot cert-dot--orange"></div>
+            <span class="cert-issuer">LetsUpgrade</span>
+            <span class="cert-date">Sep 2024</span>
+          </div>
+          <h4 class="cert-name">Cyber Security &amp; Ethical Hacking Bootcamp</h4>
+          <p class="cert-skills">Ethical Hacking · Network Security · +2 skills</p>
+          <a href="https://verify.letsupgrade.in/certificate/LUECSEHAUG124991" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
+        </div>
+
+      </div>
+
+      <div class="cert-footer-row reveal">
+        <a href="https://credly.com/user/kusgr" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="ph ph-medal"></i>&nbsp; Credly
+        </a>
+        <a href="https://linkedin.com/in/kusgr" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="ph ph-linkedin-logo"></i>&nbsp; LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MIND ══ -->
+  <section class="section" id="mind">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Mind</span>
+        <h2 class="section-title">What I read.<br />What I think.</h2>
+      </div>
+
+      <div class="mind-grid">
+        <div class="mind-col reveal">
+          <h3 class="mind-col-title"><i class="ph ph-books"></i> Authors</h3>
+          <ul class="book-list">
+            <li class="book-item">
+              <span class="book-author">Kafka</span>
+              <span class="book-title">The Metamorphosis, Letter to His Father, Letters to Milena</span>
+            </li>
+            <li class="book-item">
+              <span class="book-author">Dostoevsky</span>
+              <span class="book-title">Crime and Punishment, The Brothers Karamazov, White Nights, Notes from Underground</span>
+            </li>
+            <li class="book-item">
+              <span class="book-author">Nietzsche</span>
+              <span class="book-title">Thus Spoke Zarathustra, Beyond Good and Evil, On the Genealogy of Morality</span>
+            </li>
+            <li class="book-item">
+              <span class="book-author">Karl Marx</span>
+              <span class="book-title">Capital: A Critique of Political Economy, The Communist Manifesto, Critique of Hegel's Philosophy of Right</span>
+            </li>
+            <li class="book-item">
+              <span class="book-author">Sylvia Plath</span>
+              <span class="book-title">The Bell Jar, Arie, The Colossus</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mind-col reveal" style="--delay:.15s">
+          <h3 class="mind-col-title"><i class="ph ph-quotes"></i> Thoughts</h3>
+          <div class="thought-list">
+            <blockquote class="thought">
+              <p>Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.</p>
+            </blockquote>
+            <blockquote class="thought">
+              <p>Pain and suffering are always inevitable for a large intelligence and a deep heart. The really great men must, I think, have great sadness on earth.</p>
+            </blockquote>
+            <blockquote class="thought">
+              <p>The only true wisdom is in knowing you know nothing.</p>
+            </blockquote>
+            <blockquote class="thought">
+              <p>It takes something more than intelligence to act intelligently.</p>
+            </blockquote>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's connect.</h2>
+      </div>
+
+      <div class="contact-wrap reveal">
+        <p class="contact-sub">Open to opportunities and collaborations.</p>
+
+        <a href="mailto:dev.kusgr@gmail.com" class="contact-email">
+          dev.kusgr@gmail.com
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+
+        <!-- 11-platform social grid -->
+        <div class="social-grid">
+
+          <a href="https://linkedin.com/in/kusgr"      target="_blank" rel="noopener" class="social-card" title="LinkedIn">
+            <i class="ph ph-linkedin-logo"></i>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/kusgr"        target="_blank" rel="noopener" class="social-card" title="GitHub">
+            <i class="ph ph-github-logo"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://x.com/devkusgr"       target="_blank" rel="noopener" class="social-card" title="Twitter / X">
+            <i class="ph ph-x-logo"></i>
+            <span>Twitter</span>
+          </a>
+
+          <a href="https://instagram.com/ku.sgr"     target="_blank" rel="noopener" class="social-card" title="Instagram">
+            <i class="ph ph-instagram-logo"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://t.me/kusgr"              target="_blank" rel="noopener" class="social-card" title="Telegram">
+            <i class="ph ph-telegram-logo"></i>
+            <span>Telegram</span>
+          </a>
+
+          <a href="https://facebook.com/kusgraa"      target="_blank" rel="noopener" class="social-card" title="Facebook">
+            <i class="ph ph-facebook-logo"></i>
+            <span>Facebook</span>
+          </a>
+
+          <a href="https://snapchat.com/add/kushgr"      target="_blank" rel="noopener" class="social-card" title="Snapchat">
+            <i class="ph ph-snapchat-logo"></i>
+            <span>Snapchat</span>
+          </a>
+
+          <a href="https://open.spotify.com/user/31u2ig436d3wasajxhvtcfecrhoa"  target="_blank" rel="noopener" class="social-card" title="Spotify">
+            <i class="ph ph-spotify-logo"></i>
+            <span>Spotify</span>
+          </a>
+
+          <a href="https://www.goodreads.com/review/list/179680390-kushagra?shelf=read"     target="_blank" rel="noopener" class="social-card" title="Goodreads">
+            <i class="ph ph-book-open-text"></i>
+            <span>Goodreads</span>
+          </a>
+
+          <a href="https://letterboxd.com/kusgr"    target="_blank" rel="noopener" class="social-card" title="Letterboxd">
+            <i class="ph ph-film-slate"></i>
+            <span>Letterboxd</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <p class="footer-text">Built with intention<span class="accent-dot">.</span></p>
+    <p class="footer-copy">© 2026 Kushagra Maurya &nbsp;·&nbsp; Cybersecurity Specialist · Full-Stack Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
