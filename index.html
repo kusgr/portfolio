@@ -1,625 +1,194 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kushagra Maurya — Cybersecurity · AI · Software</title>
-  <meta name="description" content="Kushagra Maurya — Core OEM Developer | Cybersecurity Specialist | Full-Stack Developer" />
-
-  <link rel="icon" href="favicon.ico" />
-  
-  <!-- Open Graph (IMPORTANT for preview) -->
-  <meta property="og:title" content="Kushagra Maurya — Cybersecurity · AI · Software" />
-  <meta property="og:description" content="Explore my portfolio, projects, and tech work." />
+  <meta name="theme-color" content="#f7f9fc" />
+  <meta name="description" content="Kushagra Maurya — Founder at Vyrex Technologies, Full-Stack Developer, Bioinformatics student, AI builder and Android open-source contributor." />
+  <meta property="og:title" content="Kushagra Maurya — Founder · Full-Stack · Bioinformatics · OSS" />
+  <meta property="og:description" content="Founder at Vyrex Technologies building full-stack products, AI-powered experiences, biotech-data systems and Android open-source work." />
   <meta property="og:image" content="https://kusgr.github.io/p/preview.jpg" />
   <meta property="og:url" content="https://kusgr.github.io/p/" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Preview -->
   <meta name="twitter:card" content="summary_large_image" />
-  
-  <!-- Fonts -->
+  <link rel="icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
-
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script defer src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  <style>
+    :root{
+      --bg:#f7f9fc; --surface:#fff; --surface-2:#eef2f7; --text:#101827; --muted:#607089; --muted-2:#8491a5;
+      --line:#e2e8f0; --line-strong:#ccd6e3; --accent:#5b5cf0; --accent-2:#14b8a6; --accent-soft:#eeedff;
+      --shadow:0 24px 70px rgba(32,48,78,.10); --shadow-soft:0 10px 34px rgba(32,48,78,.08); --radius:22px; --max:1180px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth;background:var(--bg)}
+    body{color:var(--text);background:radial-gradient(circle at 88% 8%,rgba(91,92,240,.11),transparent 24%),radial-gradient(circle at 7% 22%,rgba(20,184,166,.08),transparent 22%),var(--bg);font-family:Manrope,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+    body.menu-open{overflow:hidden}.container{width:min(calc(100% - 40px),var(--max));margin-inline:auto}.mono{font-family:'DM Mono',monospace} a{color:inherit;text-decoration:none} button{font:inherit;color:inherit} img{display:block;max-width:100%}
+    ::selection{background:var(--accent);color:#fff}:focus-visible{outline:3px solid rgba(91,92,240,.35);outline-offset:3px}
+    .noise{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}
+    main{overflow:clip} section{padding:112px 0;border-top:1px solid var(--line);scroll-margin-top:84px}
+    .eyebrow{display:flex;align-items:center;gap:9px;color:var(--muted);font:500 .72rem/1 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase}.eyebrow::before{content:'';width:27px;height:1px;background:var(--accent)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:40px}.section-head h2{margin-top:14px;font:800 clamp(2.5rem,5vw,4.65rem)/.96 Syne,sans-serif;letter-spacing:-.065em}.section-note{max-width:385px;color:var(--muted);font-size:.9rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line-strong);border-radius:14px;padding:12px 17px;background:var(--surface);font-size:.84rem;font-weight:800;box-shadow:0 3px 12px rgba(32,48,78,.04);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft);border-color:#bcc8d8}.btn-primary{background:var(--text);border-color:var(--text);color:#fff}.btn-primary:hover{background:#1d2939}.btn-soft{background:var(--accent-soft);border-color:#dcd9ff;color:#4547c9}.btn-quiet{background:transparent}
+    .chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:#5c6a80;background:#fff;font:500 .66rem/1.15 'DM Mono',monospace}.chips{display:flex;flex-wrap:wrap;gap:7px}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    /* Nav */
+    .nav{position:fixed;inset:0 0 auto;z-index:50;border-bottom:1px solid transparent;background:rgba(247,249,252,.66);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:.25s ease}.nav.scrolled{background:rgba(255,255,255,.9);border-color:var(--line)}.nav-inner{height:76px;width:min(calc(100% - 40px),var(--max));margin:auto;display:flex;align-items:center;justify-content:space-between}.logo{font:800 1.45rem/1 Syne,sans-serif;letter-spacing:-.06em}.logo span{color:var(--accent)}.nav-links{list-style:none;display:flex;align-items:center;gap:4px}.nav-links a{color:#627087;font-size:.82rem;padding:9px 12px;border-radius:999px;transition:.2s ease}.nav-links a:hover{color:var(--text);background:#edf1f6}.nav-links .nav-cta{background:var(--text);color:#fff;font-weight:800;padding-inline:15px}.hamb{display:none;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid var(--line-strong);border-radius:14px;background:#fff;cursor:pointer}.mobile-menu{display:none;max-height:0;overflow:hidden;background:rgba(255,255,255,.96);border-bottom:1px solid transparent;transition:max-height .28s ease,border-color .28s ease}.mobile-menu.open{border-color:var(--line)}.mobile-menu-inner{width:min(calc(100% - 40px),var(--max));margin:auto;padding:12px 0 18px;display:grid;gap:5px}.mobile-menu a{padding:12px 14px;border-radius:12px;color:#54647b}.mobile-menu a:hover{background:#f2f5f8;color:var(--text)}
+    /* Hero */
+    .hero{position:relative;min-height:100svh;padding:130px 0 82px;display:grid;align-items:center;isolation:isolate}.hero-grid{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(16,24,39,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(16,24,39,.038) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 84%)}.hero-orb{position:absolute;z-index:-1;border-radius:50%;filter:blur(65px);pointer-events:none;opacity:.42}.orb-a{width:380px;height:380px;right:-130px;top:90px;background:rgba(91,92,240,.15)}.orb-b{width:300px;height:300px;left:-120px;bottom:-80px;background:rgba(20,184,166,.12)}
+    .hero-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:58px;align-items:end}.hero-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 11px;margin-bottom:22px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.76);color:#526178;font:500 .69rem/1 'DM Mono',monospace;box-shadow:0 8px 30px rgba(41,57,88,.05)}.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 0 rgba(20,184,166,.32);animation:pulse 2.1s infinite}@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(20,184,166,0)}}
+    h1{max-width:950px;font:800 clamp(4rem,9vw,8.7rem)/.84 Syne,sans-serif;letter-spacing:-.08em}.hero-name-ghost{color:transparent;-webkit-text-stroke:1px rgba(16,24,39,.23)}.hero-sub{max-width:730px;margin-top:28px;color:#53627a;font-size:clamp(1.02rem,2vw,1.2rem);line-height:1.62}.hero-sub strong{color:var(--text)}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}.hero-panel{justify-self:end;width:min(100%,400px);padding:22px;border:1px solid var(--line-strong);border-radius:24px;background:rgba(255,255,255,.84);box-shadow:var(--shadow);transform:rotate(1deg);transition:transform .3s ease,border-color .3s ease}.hero-panel:hover{transform:translateY(-5px) rotate(0);border-color:#bcc7d7}.panel-top{display:flex;justify-content:space-between;gap:10px;color:#7b889b;font:500 .67rem/1 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.status{color:#138f81}.panel-title{margin-top:23px;font:700 1.45rem Syne,sans-serif;letter-spacing:-.035em}.panel-copy{margin-top:7px;color:var(--muted);font-size:.88rem}.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}.panel-stat{padding:13px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(180deg,#fff,#f7f9fc)}.panel-stat b{display:block;font:800 1.12rem Syne,sans-serif}.panel-stat span{display:block;margin-top:2px;color:var(--muted-2);font-size:.66rem}
+    /* About */
+    .about-top{display:grid;grid-template-columns:1.08fr .92fr;gap:42px}.lead-copy{color:#4d5d75;font-size:1.03rem;line-height:1.86}.lead-copy strong{color:var(--text)}.identity-card{padding:26px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow-soft)}.identity-card h3{font:700 1.05rem Syne,sans-serif}.identity-list{display:grid;gap:14px;margin-top:18px}.identity-item{display:flex;gap:12px;align-items:flex-start;color:#647289;font-size:.87rem}.identity-item i{margin-top:3px;color:var(--accent)}.identity-item strong{color:var(--text)}.marquee{overflow:hidden;margin-top:42px;padding:14px 0;border-block:1px solid var(--line);mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}.marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite}.marquee-track span,.marquee-track b{padding-right:31px;font:500 .68rem/1 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.marquee-track span{color:#9aa6b7}.marquee-track b{color:#647289}@keyframes marquee{to{transform:translateX(-50%)}}
+    /* Toolkit */
+    .stack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.stack-card{padding:22px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 8px 22px rgba(32,48,78,.04);transition:.25s ease}.stack-card:hover{transform:translateY(-4px);border-color:#c9d3e1;box-shadow:var(--shadow-soft)}.stack-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.stack-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:#f0f1ff;color:#4f51db;font-size:1.25rem}.stack-card h3{margin-top:17px;font:700 1.13rem Syne,sans-serif}.stack-card p{margin-top:7px;color:var(--muted);font-size:.83rem}.stack-card .chips{margin-top:16px}
+    /* Work */
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.project{position:relative;padding:24px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 8px 24px rgba(32,48,78,.045);transition:.25s ease;overflow:hidden}.project::after{content:'';position:absolute;inset:auto -40px -70px auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(91,92,240,.11),transparent 68%);pointer-events:none}.project:hover{transform:translateY(-5px);border-color:#c8d2df;box-shadow:var(--shadow)}.project.featured{grid-column:span 2}.project-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.project-no{font:500 .66rem/1 'DM Mono',monospace;letter-spacing:.1em;color:#8a97aa;text-transform:uppercase}.project-icon{font-size:1.15rem;color:#4f51db}.project-badge{display:inline-flex;margin-top:23px;padding:6px 9px;border-radius:999px;background:#f2f3ff;color:#4d4fd2;font:600 .62rem/1 'DM Mono',monospace;text-transform:uppercase}.project h3{margin-top:13px;font:700 1.55rem/1.08 Syne,sans-serif;letter-spacing:-.03em}.project p{margin-top:10px;color:#627087;font-size:.88rem;line-height:1.78}.project .chips{margin-top:17px}.project-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.mini-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid var(--line);border-radius:11px;color:#506079;background:#f9fbfd;font-size:.72rem;font-weight:800;transition:.2s ease}.mini-btn:hover{background:#eef2f7;border-color:#cfd8e4}.mini-btn.primary{background:var(--text);color:#fff;border-color:var(--text)}
+    /* Timeline */
+    .timeline{position:relative;display:grid;gap:12px}.timeline::before{content:'';position:absolute;left:14px;top:15px;bottom:15px;width:1px;background:var(--line-strong)}.role{position:relative;display:grid;grid-template-columns:32px 1fr auto;gap:18px;align-items:start;padding:18px 0}.role-dot{width:9px;height:9px;margin-top:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg);position:relative;z-index:1}.role-main h3{font:700 1.1rem Syne,sans-serif}.role-main .company{margin-top:3px;color:#55657b;font-weight:700;font-size:.82rem}.role-main p{margin-top:8px;color:var(--muted);font-size:.84rem;max-width:760px}.role-date{white-space:nowrap;color:#8895a8;font:500 .68rem/1.3 'DM Mono',monospace;text-transform:uppercase;text-align:right}
+    /* Certs */
+    .cert-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:14px}.cert-list{display:grid;gap:9px}.cert{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:17px 18px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 5px 16px rgba(32,48,78,.035);transition:.2s ease}.cert:hover{border-color:#c9d3df;transform:translateX(2px)}.cert-name{font-weight:800;font-size:.89rem}.cert-issuer{margin-top:3px;color:var(--muted);font-size:.72rem}.cert-date{color:#8793a7;font:500 .66rem/1 'DM Mono',monospace}.cert-highlight{padding:26px;border:1px solid #dcd9ff;border-radius:22px;background:linear-gradient(160deg,#f2f1ff,#fff)}.cert-highlight .big{font:800 4.8rem/.82 Syne,sans-serif;letter-spacing:-.07em;color:#484ad2}.cert-highlight h3{margin-top:18px;font:700 1.35rem/1.1 Syne,sans-serif}.cert-highlight p{margin-top:10px;color:#627087;font-size:.82rem;line-height:1.75}.cert-highlight .chips{margin-top:18px}
+    /* Contact */
+    .contact{padding-top:92px}.contact-box{padding:42px;border:1px solid var(--line-strong);border-radius:28px;background:linear-gradient(145deg,#fff,#f4f6fb);box-shadow:var(--shadow)}.contact-box h2{margin-top:15px;font:800 clamp(2.8rem,6vw,5.5rem)/.9 Syne,sans-serif;letter-spacing:-.07em}.contact-box h2 span{color:var(--accent)}.contact-box>p{max-width:690px;margin-top:18px;color:#627087;font-size:.98rem}.contact-row{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:30px}.email{font:700 clamp(1rem,2vw,1.25rem) Syne,sans-serif;letter-spacing:-.02em}.socials{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.social{display:inline-flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid var(--line);border-radius:11px;background:#fff;color:#596980;font-size:.72rem;font-weight:800;transition:.2s ease}.social:hover{transform:translateY(-2px);border-color:#c6d1de;color:var(--text)}
+    footer{padding:28px 0 46px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#8996a9;font-size:.72rem}.toast{position:fixed;right:20px;bottom:20px;z-index:70;max-width:min(360px,calc(100% - 40px));padding:12px 15px;border:1px solid var(--line-strong);border-radius:13px;background:rgba(255,255,255,.96);box-shadow:var(--shadow);color:#526178;font-size:.76rem;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s ease}.toast.show{opacity:1;transform:none}
+    @media(max-width:980px){.nav-links{display:none}.hamb{display:flex}.mobile-menu{display:block}.hero-layout,.about-top,.cert-layout{grid-template-columns:1fr}.hero-panel{justify-self:start;max-width:480px}.stack-grid{grid-template-columns:repeat(2,1fr)}.role{grid-template-columns:32px 1fr}.role-date{text-align:left;grid-column:2}.contact-row{flex-direction:column;align-items:flex-start}.socials{justify-content:flex-start}}
+    @media(max-width:720px){section{padding:86px 0}.container,.nav-inner,.mobile-menu-inner{width:min(calc(100% - 28px),var(--max))}.hero{padding:114px 0 65px}.hero-grid{background-size:48px 48px}h1{font-size:clamp(3.25rem,17vw,6rem)}.hero-sub{font-size:.95rem}.hero-panel{width:100%;padding:19px}.section-head{display:block;margin-bottom:31px}.section-note{margin-top:13px}.section-head h2{font-size:clamp(2.2rem,11vw,3.4rem)}.stack-grid,.projects{grid-template-columns:1fr}.project.featured{grid-column:span 1}.project{padding:20px}.contact-box{padding:27px 20px;border-radius:22px}.contact-box h2{font-size:clamp(2.55rem,13vw,4rem)}.email{font-size:1rem}.role{padding:15px 0}.marquee-track{animation-duration:22s}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-orb,.pulse,.marquee-track{animation:none}.btn,.stack-card,.project,.cert,.social{transition:none}}
+  </style>
 </head>
 <body>
-
-  <!-- Custom Cursor -->
-  <div class="cursor-dot"  id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- Grain Noise -->
-  <div class="noise-overlay" aria-hidden="true"></div>
-
-  <!-- ══ NAV ══ -->
-  <nav class="nav" id="nav">
-    <a href="#hero" class="nav-logo">KM<span class="accent-dot">.</span></a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certs</a></li>
-      <li><a href="#mind">Mind</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <ul>
-      <li><a href="#about"          class="drawer-link">About</a></li>
-      <li><a href="#skills"         class="drawer-link">Skills</a></li>
-      <li><a href="#projects"       class="drawer-link">Projects</a></li>
-      <li><a href="#certifications" class="drawer-link">Certifications</a></li>
-      <li><a href="#mind"           class="drawer-link">Mind</a></li>
-      <li><a href="#contact"        class="drawer-link">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- ══ HERO ══ -->
-  <section class="hero" id="hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="orb orb-blue"   aria-hidden="true"></div>
-    <div class="orb orb-purple" aria-hidden="true"></div>
-
-    <div class="hero-content">
-      <p class="hero-label">
-        <span class="label-line"></span>
-        Android &middot; Cybersecurity &middot; AI
-      </p>
-
-      <p class="hero-bio">
-        Building systems that think, defend, and create real impact.
-      </p>
-
-      <h1 class="hero-name">
-        Kushagra<br />
-        <span class="name-outline">Maurya</span>
-      </h1>
-
-      <div class="hero-cta-group">
-        <a href="#projects" class="btn btn-primary">View Work</a>
-        <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo" aria-label="Kushagra Maurya home">KM<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#projects">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#certs">Certs</a></li><li><a href="#contact" class="nav-cta">Connect</a></li>
+        </ul>
+      </nav>
+      <button class="hamb" id="hamb" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><i id="hambIcon" class="ph ph-list"></i></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="#about">About</a><a href="#toolkit">Toolkit</a><a href="#projects">Work</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Connect</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- ══ ABOUT ══ -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">01 / About</span>
-        <h2 class="section-title">Three sides<br />of the same mind.</h2>
-      </div>
-
-      <div class="bio-strip reveal">
-        <p>
-          I'm a <strong>3rd-year B.Tech Biotechnology</strong> student at RR Institute of Modern Technology with a
-          unique "T-shaped" skillset bridging biological sciences, advanced software engineering, and digital media.
-          As a <strong>Core OEM Developer (Team MST)</strong>, I've contributed to <em>Corvus OS, Havoc OS,
-          Cherish OS, and Evolution X</em> — specialising in kernel enhancement (TRB, Darkonah), system-level
-          tweaking, GApps customisation, and QA. Beyond code, I lead technical communities, direct media
-          strategies, and explore the cutting edge of Cybersecurity &amp; AI.
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <div class="card-icon-wrap"><i class="ph ph-brain card-icon"></i></div>
-          <h3 class="card-title">Thinker</h3>
-          <p class="card-sub">Psychology &amp; Philosophy</p>
-          <p class="card-desc">Deconstructs human behaviour to understand systems people build — and break. A Mid-Bencher who values concepts over rote memorisation.</p>
-          <div class="card-glow"></div>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-orb orb-a" aria-hidden="true"></div><div class="hero-orb orb-b" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <div class="hero-kicker"><span class="pulse"></span> Founder @ Vyrex Technologies · Building from India</div>
+          <h1>Kushagra<br><span class="hero-name-ghost">Maurya.</span></h1>
+          <p class="hero-sub">I’m a <strong>3rd-year B.Tech Biotechnology student</strong> who builds full-stack products, works across AI and bioinformatics, contributes to Android open source, and turns ideas into things people can actually use.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <i class="ph ph-arrow-down-right"></i></a><a class="btn btn-soft" href="mailto:dev.kusgr@gmail.com">Start a conversation <i class="ph ph-arrow-up-right"></i></a></div>
         </div>
+        <aside class="hero-panel reveal" style="--delay:.12s">
+          <div class="panel-top"><span>Current focus</span><span class="status">Available</span></div>
+          <div class="panel-title">Shipping useful products.</div>
+          <p class="panel-copy">A T-shaped mix of product engineering, AI, biotech-data thinking and Android OSS.</p>
+          <div class="panel-grid"><div class="panel-stat"><b>26+</b><span>Reelog build cycles</span></div><div class="panel-stat"><b>14+</b><span>Certificates</span></div><div class="panel-stat"><b>1</b><span>Software company</span></div><div class="panel-stat"><b>3+</b><span>Core domains</span></div></div>
+        </aside>
+      </div>
+    </section>
 
-        <div class="about-card reveal" style="--delay:.1s">
-          <div class="card-icon-wrap"><i class="ph ph-device-mobile card-icon"></i></div>
-          <h3 class="card-title">Builder</h3>
-          <p class="card-sub">Android · Cybersecurity · AI</p>
-          <p class="card-desc">Engineers custom ROMs, writes ethical exploits, shapes AI-powered tools, and formulates real-world biotech solutions.</p>
-          <div class="card-glow"></div>
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">01 / About</div><h2>Tech, biology,<br>and execution.</h2></div><p class="section-note">Not a single-track profile. The value is in connecting disciplines and shipping with intent.</p></div>
+        <div class="about-top">
+          <div class="lead-copy reveal"><p>Most people don’t expect the biotech student to also be the one debugging the deploy.</p><p style="margin-top:16px">I founded <strong>Vyrex Technologies</strong>, a Ministry of MSME-registered software services company delivering web, mobile and AI solutions. Alongside that, I build end-to-end products like <strong>Reelog</strong> and <strong>CellGuard</strong>, while developing a technical foundation in <strong>bioinformatics, molecular techniques, food technology and microbiology</strong>.</p><p style="margin-top:16px">I’ve also contributed to Android open source with <strong>Team MST</strong>, working across QA, kernels, GApps, ROM stability and end-user troubleshooting. I move quickly with AI-assisted tools, but I go manual when precision matters.</p></div>
+          <aside class="identity-card reveal" style="--delay:.08s"><h3>What I’m looking for</h3><div class="identity-list"><div class="identity-item"><i class="ph ph-code"></i><span><strong>Full-stack / product roles</strong><br>Building polished products end to end.</span></div><div class="identity-item"><i class="ph ph-dna"></i><span><strong>Bioinformatics / biotech-data</strong><br>Applying computation to biological problems.</span></div><div class="identity-item"><i class="ph ph-handshake"></i><span><strong>Strong collaborators</strong><br>People building products people actually use.</span></div></div></aside>
         </div>
+        <div class="marquee reveal" style="--delay:.1s"><div class="marquee-track"><b>Founder</b><span>Full-Stack</span><b>AI</b><span>Bioinformatics</span><b>Android OSS</b><span>Product</span><b>Biotechnology</b><span>Execution</span><b>Founder</b><span>Full-Stack</span><b>AI</b><span>Bioinformatics</span><b>Android OSS</b><span>Product</span><b>Biotechnology</b><span>Execution</span></div></div>
+      </div>
+    </section>
 
-        <div class="about-card reveal" style="--delay:.2s">
-          <div class="card-icon-wrap"><i class="ph ph-lightning card-icon"></i></div>
-          <h3 class="card-title">Operator</h3>
-          <p class="card-sub">Community · Media · Execution</p>
-          <p class="card-desc">Founded and led multiple technical groups, headed media teams for multi-level organisations, and turns complexity into clarity fast.</p>
-          <div class="card-glow"></div>
+    <section id="toolkit">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">02 / Toolkit</div><h2>What I work<br>across.</h2></div><p class="section-note">A practical stack shaped by shipped products, open-source work, certifications and hands-on training.</p></div>
+        <div class="stack-grid">
+          <article class="stack-card reveal"><div class="stack-top"><span class="stack-icon"><i class="ph ph-code"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">01</span></div><h3>Full-Stack Development</h3><p>End-to-end web product builds, data, auth, APIs and responsive interfaces.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">Node.js</span><span class="chip">Supabase</span><span class="chip">PostgreSQL</span></div></article>
+          <article class="stack-card reveal" style="--delay:.06s"><div class="stack-top"><span class="stack-icon"><i class="ph ph-robot"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">02</span></div><h3>AI & Product Engineering</h3><p>AI-assisted product workflows, prompt engineering and practical AI integrations.</p><div class="chips"><span class="chip">Google AI</span><span class="chip">Prompt Engineering</span><span class="chip">AI Workflows</span><span class="chip">Lovable</span><span class="chip">Stitch</span></div></article>
+          <article class="stack-card reveal" style="--delay:.12s"><div class="stack-top"><span class="stack-icon"><i class="ph ph-dna"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">03</span></div><h3>Bioinformatics & Biotech</h3><p>Genomic analysis foundations plus practical biotechnology lab training.</p><div class="chips"><span class="chip">UC San Diego</span><span class="chip">Genomics</span><span class="chip">Molecular techniques</span><span class="chip">Microbiology</span></div></article>
+          <article class="stack-card reveal" style="--delay:.18s"><div class="stack-top"><span class="stack-icon"><i class="ph ph-device-mobile"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">04</span></div><h3>Android Open Source</h3><p>ROM QA, kernel compatibility, GApps packaging and recovery troubleshooting.</p><div class="chips"><span class="chip">Cherish OS</span><span class="chip">OctaviOS</span><span class="chip">Kernel QA</span><span class="chip">Fastboot</span></div></article>
+          <article class="stack-card reveal" style="--delay:.24s"><div class="stack-top"><span class="stack-icon"><i class="ph ph-shield-check"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">05</span></div><h3>Security</h3><p>Ethical hacking, web and AI security foundations, vulnerability thinking and defensive awareness.</p><div class="chips"><span class="chip">CEH</span><span class="chip">Web Security</span><span class="chip">AI Security</span><span class="chip">OSINT</span></div></article>
+          <article class="stack-card reveal" style="--delay:.30s"><div class="stack-top"><span class="stack-icon"><i class="ph ph-rocket-launch"></i></span><span class="mono" style="font-size:.66rem;color:#8a97aa">06</span></div><h3>Execution & Delivery</h3><p>Fast iteration with a bias toward shipping, feedback, debugging and continuous refinement.</p><div class="chips"><span class="chip">Supabase</span><span class="chip">Render</span><span class="chip">Vite</span><span class="chip">GitHub</span></div></article>
         </div>
       </div>
+    </section>
 
-      <div class="competencies reveal" style="--delay:.1s">
-        <div class="comp-item"><i class="ph ph-device-mobile-camera"></i><span>Android Engineering</span></div>
-        <div class="comp-item"><i class="ph ph-shield-check"></i><span>Cybersecurity &amp; AI</span></div>
-        <div class="comp-item"><i class="ph ph-flask"></i><span>Biotechnology</span></div>
-        <div class="comp-item"><i class="ph ph-megaphone"></i><span>Media Strategy</span></div>
-        <div class="comp-item"><i class="ph ph-users-three"></i><span>Community Leadership</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ SKILLS ══ -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">02 / Skills</span>
-        <h2 class="section-title">What I work with.</h2>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="skill-card-header">
-            <i class="ph ph-shield-slash skill-cat-icon"></i>
-            <h3 class="skill-cat-title">Cybersecurity</h3>
-          </div>
-          <ul class="skill-list">
-            <li><span class="skill-name">Ethical Hacking</span>           <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">OSINT</span>                     <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Vulnerability Assessment</span>  <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">SOC / Incident Response</span>   <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">AI Red Teaming</span>            <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">Security Architecture</span>     <span class="skill-badge learning">Learning</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:.1s">
-          <div class="skill-card-header">
-            <i class="ph ph-device-mobile skill-cat-icon"></i>
-            <h3 class="skill-cat-title">Android Engineering</h3>
-          </div>
-          <ul class="skill-list">
-            <li><span class="skill-name">Custom ROM Development</span>    <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Kernel Enhancement</span>        <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Quality Assurance (QA)</span>    <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">GApps Customisation</span>       <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Bootloader / Fastboot</span>     <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">Play Integrity Fixes</span>      <span class="skill-badge working">Working</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:.2s">
-          <div class="skill-card-header">
-            <i class="ph ph-robot skill-cat-icon"></i>
-            <h3 class="skill-cat-title">AI &amp; Development</h3>
-          </div>
-          <ul class="skill-list">
-            <li><span class="skill-name">Prompt Engineering</span>        <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">LLM Stress Testing</span>        <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">HTML / CSS / JavaScript</span>   <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">Python</span>                    <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">AI Agent Workflows</span>        <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">DevOps / CI/CD</span>            <span class="skill-badge learning">Learning</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal" style="--delay:.3s">
-          <div class="skill-card-header">
-            <i class="ph ph-palette skill-cat-icon"></i>
-            <h3 class="skill-cat-title">Media &amp; Design</h3>
-          </div>
-          <ul class="skill-list">
-            <li><span class="skill-name">Canva / Figma</span>             <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Social Media Strategy</span>     <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Visual Communication</span>      <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Brand Identity</span>            <span class="skill-badge working">Working</span></li>
-            <li><span class="skill-name">Community Management</span>      <span class="skill-badge comfortable">Comfortable</span></li>
-            <li><span class="skill-name">Tech Writing</span>              <span class="skill-badge working">Working</span></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ PROJECTS ══ -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">03 / Projects</span>
-        <h2 class="section-title">Things I've built.</h2>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Project 1: Android Keylogger -->
-        <article class="project-card reveal">
-          <div class="project-top">
-            <div class="project-icon-wrap">
-              <i class="ph ph-keyboard project-icon"></i>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link" title="Code"><i class="ph ph-github-logo"></i></a>
-            </div>
-          </div>
-          <span class="project-category">Android · Security Research</span>
-          <h3 class="project-title">Android Keylogger</h3>
-          <p class="project-desc">A research-purpose Android keylogger that captures keystrokes at the system level, demonstrating input vulnerability surfaces in mobile operating systems and informing defensive hardening strategies.</p>
-          <div class="project-tags">
-            <span class="tag">Android</span>
-            <span class="tag">Java</span>
-            <span class="tag">ADB</span>
-            <span class="tag">Security Research</span>
-          </div>
-          <div class="project-card-glow"></div>
-        </article>
-
-        <!-- Project 2: Vitamin E Serum -->
-        <article class="project-card project-card--bio reveal" style="--delay:.12s">
-          <div class="project-top">
-            <div class="project-icon-wrap project-icon-wrap--green">
-              <i class="ph ph-flask project-icon project-icon--green"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/kusgr/portfolio/blob/main/MINI-PROJECT.pdf" class="project-link" title="Report"><i class="ph ph-file-pdf"></i></a>
-            </div>
-          </div>
-          <span class="project-category">Biotechnology · Cosmetic Science</span>
-          <h3 class="project-title">Homemade Vitamin E Face Serum</h3>
-          <p class="project-desc">Formulated and evaluated a DIY Vitamin E face serum (B.Tech Mini Project). Using Evion capsules, aloe vera gel, glycerine &amp; rose water — studied physical properties, preparation method, safety protocols, and real-world applications.</p>
-          <div class="project-tags">
-            <span class="tag tag--bio">B.Tech Biotech</span>
-            <span class="tag tag--bio">Cosmetic Formulation</span>
-            <span class="tag tag--bio">Lab Research</span>
-            <span class="tag tag--bio">Antioxidants</span>
-          </div>
-          <div class="project-card-glow project-card-glow--green"></div>
-        </article>
-
-        <!-- Project 3: YojanaBot -->
-        <article class="project-card reveal" style="--delay:.24s">
-          <div class="project-top">
-            <div class="project-icon-wrap">
-              <i class="ph ph-chats-circle project-icon"></i>
-            </div>
-            <div class="project-links">
-              <a href="https://kusgr.github.io/yojanabot-ai-bharat/" class="project-link" title="Live Demo"><i class="ph ph-arrow-square-out"></i></a>
-              <a href="https://github.com/kusgr/yojanabot-ai-bharat" class="project-link" title="Code"><i class="ph ph-github-logo"></i></a>
-            </div>
-          </div>
-          <span class="project-category">AI · Civic Tech · Multilingual</span>
-          <h3 class="project-title">YojanaBot</h3>
-          <p class="project-desc">Millions of Indians miss government scheme benefits due to language barriers. YojanaBot is a multilingual AI chatbot (Hindi + English) with voice input that recommends schemes based on individual user needs — bridging India's awareness gap.</p>
-          <div class="project-tags">
-            <span class="tag">HTML/CSS/JS</span>
-            <span class="tag">JSON Dataset</span>
-            <span class="tag">Rule-based AI</span>
-            <span class="tag">Voice Input 🎤</span>
-          </div>
-          <div class="project-card-glow"></div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ CERTIFICATIONS ══ -->
-  <section class="section section-alt" id="certifications">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">04 / Certifications</span>
-        <h2 class="section-title">Always learning.</h2>
-      </div>
-
-      <!-- Scrolling ticker -->
-      <div class="ticker-wrapper reveal">
-        <div class="ticker-track">
-          <div class="ticker-content" id="tickerContent">
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Google · Foundations of Cybersecurity</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Deloitte Australia · Cyber</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Security &amp; Ethical Hacking: Web &amp; AI</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity for Everyone · Coursera</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> DevOps Foundation · Infosys Springboard</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Tata Cybersecurity Analyst · Forage</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Advanced Cyber Security · Great Learning</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity Fundamentals · IBM</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Prompt Engineering Bootcamp · LetsUpgrade</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Figma Bootcamp · LetsUpgrade</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> HTML &amp; CSS Bootcamp · LetsUpgrade</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Career Essentials in GitHub · LinkedIn</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Security Architecture · LinkedIn Learning</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Canva Bootcamp · LetsUpgrade</span>
-            <span class="cert-pill"><i class="ph ph-seal-check"></i> Cybersecurity Foundations · PMI &amp; NASBA &amp; IBM</span>
-          </div>
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">03 / Selected work</div><h2>Things I’ve<br>actually shipped.</h2></div><p class="section-note">Projects across product development, IoT, biotechnology and Android open source.</p></div>
+        <div class="projects">
+          <article class="project featured reveal"><div class="project-top"><span class="project-no">01 / Product · 2026</span><i class="ph ph-play-circle project-icon" aria-hidden="true"></i></div><span class="project-badge">Live product</span><h3>Reelog</h3><p>A unified watch-tracking platform for movies, TV and anime. Built solo across 26+ sequential build cycles with authentication, episode-granular diary logging, half-star ratings, custom lists, public follows, activity feed, comments and a role-gated admin dashboard.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Postgres</span><span class="chip">TMDB</span><span class="chip">AniList</span><span class="chip">Vite</span></div><div class="project-actions"><a class="mini-btn primary" href="#" data-placeholder="Reelog live link"><i class="ph ph-arrow-up-right"></i> Open product</a><a class="mini-btn" href="#" data-placeholder="Reelog repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
+          <article class="project reveal" style="--delay:.08s"><div class="project-top"><span class="project-no">02 / IoT · 2026</span><i class="ph ph-cpu project-icon" aria-hidden="true"></i></div><span class="project-badge">Monitoring system</span><h3>CellGuard</h3><p>An IoT cell culture room monitoring system built with a simulated ESP32 in Wokwi, a Node.js/Express backend deployed on Render, Supabase storage and a Next.js dashboard for real-time monitoring.</p><div class="chips"><span class="chip">ESP32</span><span class="chip">Wokwi</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Render</span><span class="chip">Supabase</span><span class="chip">Next.js</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="CellGuard project link"><i class="ph ph-arrow-up-right"></i> Project details</a></div></article>
+          <article class="project reveal" style="--delay:.12s"><div class="project-top"><span class="project-no">03 / Product · 2026</span><i class="ph ph-chart-line-up project-icon" aria-hidden="true"></i></div><span class="project-badge">Student productivity</span><h3>Campus Portal</h3><p>Student-first attendance tracking that turns raw attendance into something you can plan. Includes real-time percentages, target predictions, classrooms, member views, CSV exports, email verification, password recovery and RLS-backed auth.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Supabase Auth</span><span class="chip">PostgreSQL</span><span class="chip">RLS</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="Campus Portal live link"><i class="ph ph-arrow-up-right"></i> Open project</a><a class="mini-btn" href="#" data-placeholder="Campus Portal repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
+          <article class="project reveal" style="--delay:.16s"><div class="project-top"><span class="project-no">04 / Android OSS</span><i class="ph ph-device-mobile project-icon" aria-hidden="true"></i></div><span class="project-badge">Open source</span><h3>OctaviOS 2.7 · X00TD</h3><p>Supported the Android 11-based OctaviOS 2.7 release for Zenfone Max Pro M1 through QA, bug reporting, kernel compatibility verification, ROM stability validation and end-user recovery troubleshooting.</p><div class="chips"><span class="chip">Android 11</span><span class="chip">QA</span><span class="chip">Kernel</span><span class="chip">GApps</span><span class="chip">Fastboot</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="OctaviOS contribution link"><i class="ph ph-arrow-up-right"></i> Contribution details</a></div></article>
+          <article class="project reveal" style="--delay:.20s"><div class="project-top"><span class="project-no">05 / Biotechnology</span><i class="ph ph-flask project-icon" aria-hidden="true"></i></div><span class="project-badge">B.Tech mini project</span><h3>Homemade Vitamin E Face Serum</h3><p>Formulated and evaluated a homemade Vitamin E face serum using Vitamin E capsules, aloe vera gel, glycerine and rose water. Documented preparation, texture, color, absorption, benefits and safety precautions.</p><div class="chips"><span class="chip">Biotechnology</span><span class="chip">Cosmetic formulation</span><span class="chip">Lab work</span><span class="chip">Teamwork</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="Mini project report link"><i class="ph ph-file-pdf"></i> Report</a></div></article>
         </div>
       </div>
+    </section>
 
-      <div class="cert-grid">
-
-        <div class="cert-card reveal">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--blue"></div>
-            <span class="cert-issuer">Coursera · Google</span>
-            <span class="cert-date">Jan 2026</span>
-          </div>
-          <h4 class="cert-name">Foundations of Cybersecurity</h4>
-          <p class="cert-skills">Cybersecurity · Network Security · +3 skills</p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/ZSWTETMKY145" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.05s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--purple"></div>
-            <span class="cert-issuer">Forage · Deloitte Australia</span>
-            <span class="cert-date">Jan 2026</span>
-          </div>
-          <h4 class="cert-name">Cyber — Deloitte Australia</h4>
-          <p class="cert-skills">Computer Networking · Log Analysis · +1 skill</p>
-          <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_rTFnRMmyKHorrT3MS_1767390738695_completion_certificate.pdf" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.1s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--blue"></div>
-            <span class="cert-issuer">Coursera</span>
-            <span class="cert-date">Dec 2025</span>
-          </div>
-          <h4 class="cert-name">Security &amp; Ethical Hacking: Web &amp; AI</h4>
-          <p class="cert-skills">AI Red Teaming · Prompt Injection · +3 skills</p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/2U0KPMLP7DWV" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.15s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--blue"></div>
-            <span class="cert-issuer">Coursera</span>
-            <span class="cert-date">Dec 2025</span>
-          </div>
-          <h4 class="cert-name">Cybersecurity for Everyone</h4>
-          <p class="cert-skills">Security Awareness · Cybersecurity Policy · +4 skills</p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/7LKQ1OWYDR86?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.2s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--orange"></div>
-            <span class="cert-issuer">Infosys Springboard</span>
-            <span class="cert-date">Dec 2025</span>
-          </div>
-          <h4 class="cert-name">DevOps Foundation Certification</h4>
-          <p class="cert-skills">DevOps · CI/CD · +4 skills</p>
-          <a href="https://infyspringboard.onwingspan.com/web/assets/library/pdfjs-2.14.305-dist/web/viewer.html?file=https%3A%2F%2Finfyspringboard.onwingspan.com%2Fpublic-assets%2Finfosysheadstart%2Fcert%2Flex_auth_01365304330648780889_shared%2F1-7ae77bb4-10d7-4c19-bdc5-08c21cb34291.pdf#zoom=page-width&page=1" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.25s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--purple"></div>
-            <span class="cert-issuer">Forage · Tata</span>
-            <span class="cert-date">Jul 2025</span>
-          </div>
-          <h4 class="cert-name">Cybersecurity Analyst</h4>
-          <p class="cert-skills">SOC · Incident Response · +4 skills</p>
-          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_rTFnRMmyKHorrT3MS_1751364224320_completion_certificate.pdf" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.1s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--orange"></div>
-            <span class="cert-issuer">LetsUpgrade</span>
-            <span class="cert-date">Nov 2024</span>
-          </div>
-          <h4 class="cert-name">Prompt Engineering Bootcamp</h4>
-          <p class="cert-skills">Prompt Engineering · Generative AI · +3 skills</p>
-          <a href="https://verify.letsupgrade.in/certificate/LUEPEOCT124745" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.15s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--orange"></div>
-            <span class="cert-issuer">LetsUpgrade</span>
-            <span class="cert-date">Nov 2024</span>
-          </div>
-          <h4 class="cert-name">Figma Bootcamp</h4>
-          <p class="cert-skills">Figma · Prototyping · +3 skills</p>
-          <a href="https://verify.letsupgrade.in/certificate/LUEFGSEP1241234" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.2s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--blue"></div>
-            <span class="cert-issuer">IBM</span>
-            <span class="cert-date">Aug 2024</span>
-          </div>
-          <h4 class="cert-name">Cybersecurity Fundamentals</h4>
-          <p class="cert-skills">Information Security · Network Security · +3 skills</p>
-          <a href="https://www.credly.com/badges/585a8498-2a53-4ad3-8d95-2704b96c28bb" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.25s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--purple"></div>
-            <span class="cert-issuer">Great Learning</span>
-            <span class="cert-date">Sep 2024</span>
-          </div>
-          <h4 class="cert-name">Advanced Cyber Security — Threats &amp; Governance</h4>
-          <p class="cert-skills">Security Governance · GRC · +4 skills</p>
-          <a href="https://www.mygreatlearning.com/certificate/IOFSAFJJ" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.1s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--blue"></div>
-            <span class="cert-issuer">LinkedIn Learning</span>
-            <span class="cert-date">Sep 2024</span>
-          </div>
-          <h4 class="cert-name">Cybersecurity Foundations: Security Architecture</h4>
-          <p class="cert-skills">Security Architecture · Threat Modeling · +3 skills</p>
-          <a href="https://www.linkedin.com/learning/certificates/41d43dde9c80a0cd39ec7900cc21f32892848b5487a995676e05e23438bdcde7" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-        <div class="cert-card reveal" style="--delay:.15s">
-          <div class="cert-card-top">
-            <div class="cert-dot cert-dot--orange"></div>
-            <span class="cert-issuer">LetsUpgrade</span>
-            <span class="cert-date">Sep 2024</span>
-          </div>
-          <h4 class="cert-name">Cyber Security &amp; Ethical Hacking Bootcamp</h4>
-          <p class="cert-skills">Ethical Hacking · Network Security · +2 skills</p>
-          <a href="https://verify.letsupgrade.in/certificate/LUECSEHAUG124991" class="cert-link">Credential <i class="ph ph-arrow-up-right"></i></a>
-        </div>
-
-      </div>
-
-      <div class="cert-footer-row reveal">
-        <a href="https://credly.com/user/kusgr" target="_blank" rel="noopener" class="btn btn-ghost">
-          <i class="ph ph-medal"></i>&nbsp; Credly
-        </a>
-        <a href="https://linkedin.com/in/kusgr" target="_blank" rel="noopener" class="btn btn-ghost">
-          <i class="ph ph-linkedin-logo"></i>&nbsp; LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ MIND ══ -->
-  <section class="section" id="mind">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">05 / Mind</span>
-        <h2 class="section-title">What I read.<br />What I think.</h2>
-      </div>
-
-      <div class="mind-grid">
-        <div class="mind-col reveal">
-          <h3 class="mind-col-title"><i class="ph ph-books"></i> Authors</h3>
-          <ul class="book-list">
-            <li class="book-item">
-              <span class="book-author">Kafka</span>
-              <span class="book-title">The Metamorphosis, Letter to His Father, Letters to Milena</span>
-            </li>
-            <li class="book-item">
-              <span class="book-author">Dostoevsky</span>
-              <span class="book-title">Crime and Punishment, The Brothers Karamazov, White Nights, Notes from Underground</span>
-            </li>
-            <li class="book-item">
-              <span class="book-author">Nietzsche</span>
-              <span class="book-title">Thus Spoke Zarathustra, Beyond Good and Evil, On the Genealogy of Morality</span>
-            </li>
-            <li class="book-item">
-              <span class="book-author">Karl Marx</span>
-              <span class="book-title">Capital: A Critique of Political Economy, The Communist Manifesto, Critique of Hegel's Philosophy of Right</span>
-            </li>
-            <li class="book-item">
-              <span class="book-author">Sylvia Plath</span>
-              <span class="book-title">The Bell Jar, Arie, The Colossus</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="mind-col reveal" style="--delay:.15s">
-          <h3 class="mind-col-title"><i class="ph ph-quotes"></i> Thoughts</h3>
-          <div class="thought-list">
-            <blockquote class="thought">
-              <p>Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.</p>
-            </blockquote>
-            <blockquote class="thought">
-              <p>Pain and suffering are always inevitable for a large intelligence and a deep heart. The really great men must, I think, have great sadness on earth.</p>
-            </blockquote>
-            <blockquote class="thought">
-              <p>The only true wisdom is in knowing you know nothing.</p>
-            </blockquote>
-            <blockquote class="thought">
-              <p>It takes something more than intelligence to act intelligently.</p>
-            </blockquote>
-            
-          </div>
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">04 / Experience</div><h2>From communities<br>to company building.</h2></div><p class="section-note">A timeline showing the shift from open-source and media work into product building and entrepreneurship.</p></div>
+        <div class="timeline">
+          <article class="role reveal"><span class="role-dot"></span><div class="role-main"><h3>Founder</h3><div class="company">Vyrex Technologies</div><p>Founded and operate a software services company delivering full-stack web, mobile and AI solutions to clients across India, including web apps, e-commerce, mobile apps, AI integrations and custom digital experiences.</p></div><div class="role-date">Jul 2026 — Present</div></article>
+          <article class="role reveal" style="--delay:.05s"><span class="role-dot"></span><div class="role-main"><h3>Short Term Training</h3><div class="company">Rapture Biotech International Pvt Ltd</div><p>Hands-on training spanning bioinformatics, molecular techniques, food technology and microbiology through a certified biotech program.</p></div><div class="role-date">Jun 2026</div></article>
+          <article class="role reveal" style="--delay:.10s"><span class="role-dot"></span><div class="role-main"><h3>Media Team Head · Graphic Designer</h3><div class="company">MA’AM GROUP · Part-time / Hybrid</div><p>Led media execution while contributing as a graphic designer, supporting visual communication and team-level content delivery.</p></div><div class="role-date">Jul 2024 — Feb 2026</div></article>
+          <article class="role reveal" style="--delay:.15s"><span class="role-dot"></span><div class="role-main"><h3>Core OEM Developer</h3><div class="company">MST</div><p>Contributed to Corvus OS, Havoc OS, Cherish OS and Evolution X with focus on kernel enhancement, system-level tuning, QA and custom GApps packages.</p></div><div class="role-date">Aug 2021 — Jul 2024</div></article>
+          <article class="role reveal" style="--delay:.20s"><span class="role-dot"></span><div class="role-main"><h3>QA Tester</h3><div class="company">MST</div><p>Tested kernels and applications, found bugs and prepared clear reports for development teams to improve stability and user experience.</p></div><div class="role-date">Jun 2021 — Aug 2021</div></article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══ CONTACT ══ -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">06 / Contact</span>
-        <h2 class="section-title">Let's connect.</h2>
-      </div>
-
-      <div class="contact-wrap reveal">
-        <p class="contact-sub">Open to opportunities and collaborations.</p>
-
-        <a href="mailto:dev.kusgr@gmail.com" class="contact-email">
-          dev.kusgr@gmail.com
-          <i class="ph ph-arrow-up-right"></i>
-        </a>
-
-        <!-- 11-platform social grid -->
-        <div class="social-grid">
-
-          <a href="https://linkedin.com/in/kusgr"      target="_blank" rel="noopener" class="social-card" title="LinkedIn">
-            <i class="ph ph-linkedin-logo"></i>
-            <span>LinkedIn</span>
-          </a>
-
-          <a href="https://github.com/kusgr"        target="_blank" rel="noopener" class="social-card" title="GitHub">
-            <i class="ph ph-github-logo"></i>
-            <span>GitHub</span>
-          </a>
-
-          <a href="https://x.com/devkusgr"       target="_blank" rel="noopener" class="social-card" title="Twitter / X">
-            <i class="ph ph-x-logo"></i>
-            <span>Twitter</span>
-          </a>
-
-          <a href="https://instagram.com/ku.sgr"     target="_blank" rel="noopener" class="social-card" title="Instagram">
-            <i class="ph ph-instagram-logo"></i>
-            <span>Instagram</span>
-          </a>
-
-          <a href="https://t.me/kusgr"              target="_blank" rel="noopener" class="social-card" title="Telegram">
-            <i class="ph ph-telegram-logo"></i>
-            <span>Telegram</span>
-          </a>
-
-          <a href="https://facebook.com/kusgraa"      target="_blank" rel="noopener" class="social-card" title="Facebook">
-            <i class="ph ph-facebook-logo"></i>
-            <span>Facebook</span>
-          </a>
-
-          <a href="https://snapchat.com/add/kushgr"      target="_blank" rel="noopener" class="social-card" title="Snapchat">
-            <i class="ph ph-snapchat-logo"></i>
-            <span>Snapchat</span>
-          </a>
-
-          <a href="https://open.spotify.com/user/31u2ig436d3wasajxhvtcfecrhoa"  target="_blank" rel="noopener" class="social-card" title="Spotify">
-            <i class="ph ph-spotify-logo"></i>
-            <span>Spotify</span>
-          </a>
-
-          <a href="https://www.goodreads.com/review/list/179680390-kushagra?shelf=read"     target="_blank" rel="noopener" class="social-card" title="Goodreads">
-            <i class="ph ph-book-open-text"></i>
-            <span>Goodreads</span>
-          </a>
-
-          <a href="https://letterboxd.com/kusgr"    target="_blank" rel="noopener" class="social-card" title="Letterboxd">
-            <i class="ph ph-film-slate"></i>
-            <span>Letterboxd</span>
-          </a>
-
+    <section id="certs">
+      <div class="container">
+        <div class="section-head reveal"><div><div class="eyebrow">05 / Certifications</div><h2>Always learning.<br>Across disciplines.</h2></div><p class="section-note">Current credentials across bioinformatics, AI, biotechnology, cybersecurity, DevOps and developer tooling.</p></div>
+        <div class="cert-layout">
+          <div class="cert-list reveal">
+            <div class="cert"><div><div class="cert-name">Bioinformatics Specialization</div><div class="cert-issuer">UC San Diego · Jul 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Google AI Professional</div><div class="cert-issuer">Google · Jun 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Basic Technical Modules</div><div class="cert-issuer">Rapture Biotech International Pvt Ltd · Jun 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Getting Started with AI on Jetson Nano</div><div class="cert-issuer">NVIDIA · May 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Generative AI Literacy</div><div class="cert-issuer">Sector Skill Council Nasscom · May 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Certified Ethical Hacker (CEH)</div><div class="cert-issuer">Pearson · Apr 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Deloitte Australia — Cyber Job Simulation</div><div class="cert-issuer">Deloitte · Jan 2026</div></div><div class="cert-date">2026</div></div>
+            <div class="cert"><div><div class="cert-name">Cybersecurity for Everyone</div><div class="cert-issuer">University of Maryland · Dec 2025</div></div><div class="cert-date">2025</div></div>
+            <div class="cert"><div><div class="cert-name">Security &amp; Ethical Hacking: Attacking Web and AI Systems</div><div class="cert-issuer">University of Colorado Boulder · Dec 2025</div></div><div class="cert-date">2025</div></div>
+            <div class="cert"><div><div class="cert-name">DevOps Foundation Certification</div><div class="cert-issuer">Infosys Springboard · Dec 2025</div></div><div class="cert-date">2025</div></div>
+            <div class="cert"><div><div class="cert-name">Tata — Cybersecurity Analyst Job Simulation</div><div class="cert-issuer">Tata Group · Jul 2025</div></div><div class="cert-date">2025</div></div>
+            <div class="cert"><div><div class="cert-name">Career Essentials in GitHub (Professional Certificate)</div><div class="cert-issuer">GitHub · Oct 2024</div></div><div class="cert-date">2024</div></div>
+            <div class="cert"><div><div class="cert-name">Cybersecurity Foundations</div><div class="cert-issuer">LinkedIn Learning Community · Oct 2024</div></div><div class="cert-date">2024</div></div>
+            <div class="cert"><div><div class="cert-name">Cybersecurity Fundamentals</div><div class="cert-issuer">IBM · Aug 2024</div></div><div class="cert-date">2024</div></div>
+          </div>
+          <aside class="cert-highlight reveal" style="--delay:.1s"><div class="big">14+</div><h3>Credentials across multiple worlds.</h3><p>From genomics and biotech labs to AI, ethical hacking, DevOps and developer tooling — the thread is learning something useful enough to apply.</p><div class="chips"><span class="chip">UC San Diego</span><span class="chip">Google</span><span class="chip">NVIDIA</span><span class="chip">Pearson</span><span class="chip">IBM</span><span class="chip">GitHub</span></div></aside>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer class="footer">
-    <p class="footer-text">Built with intention<span class="accent-dot">.</span></p>
-    <p class="footer-copy">© 2026 Kushagra Maurya &nbsp;·&nbsp; Cybersecurity Specialist · Full-Stack Developer</p>
-  </footer>
+    <section id="contact" class="contact">
+      <div class="container"><div class="contact-box reveal"><div class="eyebrow">06 / Connect</div><h2>Let’s build something<br><span>worth shipping.</span></h2><p>Open to full-stack or product development roles, bioinformatics-adjacent or biotech-data opportunities, and collaborators building products people actually use.</p><div class="contact-row"><a class="email" href="mailto:dev.kusgr@gmail.com">dev.kusgr@gmail.com ↗</a><div class="socials" aria-label="Social links"><a class="social" href="https://linkedin.com/in/kusgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i> LinkedIn</a><a class="social" href="https://github.com/kusgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-github-logo"></i> GitHub</a><a class="social" href="https://instagram.com/ku.sgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i> Instagram</a><a class="social" href="https://t.me/kusgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-telegram-logo"></i> Telegram</a><a class="social" href="https://www.goodreads.com/review/list/179680390-kushagra?shelf=read" target="_blank" rel="noopener noreferrer"><i class="ph ph-book-open-text"></i> Goodreads</a><a class="social" href="https://letterboxd.com/kusgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-film-slate"></i> Letterboxd</a></div></div></div></div>
+    </section>
+  </main>
 
-  <script src="script.js"></script>
+  <footer class="container"><p>© 2026 Kushagra Maurya</p><p>Founder · Full-Stack Developer · Bioinformatics · Android OSS</p></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (()=>{
+      const nav=document.getElementById('nav'); const hamb=document.getElementById('hamb'); const menu=document.getElementById('mobileMenu'); const icon=document.getElementById('hambIcon'); const toast=document.getElementById('toast');
+      const syncNav=()=>nav.classList.toggle('scrolled',window.scrollY>18); syncNav(); window.addEventListener('scroll',syncNav,{passive:true});
+      const setMenu=open=>{hamb.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-hidden',String(!open));menu.classList.toggle('open',open);menu.style.maxHeight=open?menu.scrollHeight+'px':'0px';icon.className=open?'ph ph-x':'ph ph-list';hamb.setAttribute('aria-label',open?'Close navigation':'Open navigation');document.body.classList.toggle('menu-open',open)};
+      hamb.addEventListener('click',()=>setMenu(hamb.getAttribute('aria-expanded')!=='true')); document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>setMenu(false))); window.addEventListener('resize',()=>{if(innerWidth>980)setMenu(false)},{passive:true});
+      const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches; const observer=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}})},{threshold:.08,rootMargin:'0px 0px -25px'}); document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+      let toastTimer; const showToast=t=>{toast.textContent=t+' — add the real URL when ready.';toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2600)};
+      document.querySelectorAll('[data-placeholder]').forEach(link=>link.addEventListener('click',e=>{e.preventDefault();showToast(link.dataset.placeholder)}));
+      if(reduced) document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+    })();
+  </script>
 </body>
 </html>
