@@ -37,7 +37,7 @@
     /* Hero */
     .hero{position:relative;min-height:100svh;padding:130px 0 82px;display:grid;align-items:center;isolation:isolate}.hero-grid{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(rgba(16,24,39,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(16,24,39,.038) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 84%)}.hero-orb{position:absolute;z-index:-1;border-radius:50%;filter:blur(65px);pointer-events:none;opacity:.42}.orb-a{width:380px;height:380px;right:-130px;top:90px;background:rgba(91,92,240,.15)}.orb-b{width:300px;height:300px;left:-120px;bottom:-80px;background:rgba(20,184,166,.12)}
     .hero-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:58px;align-items:end}.hero-kicker{display:inline-flex;align-items:center;gap:9px;padding:8px 11px;margin-bottom:22px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.76);color:#526178;font:500 .69rem/1 'DM Mono',monospace;box-shadow:0 8px 30px rgba(41,57,88,.05)}.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 0 0 rgba(20,184,166,.32);animation:pulse 2.1s infinite}@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(20,184,166,0)}}
-    h1{max-width:950px;font:800 clamp(4rem,9vw,8.7rem)/.84 Syne,sans-serif;letter-spacing:-.08em}.hero-name-ghost{color:transparent;-webkit-text-stroke:1px rgba(16,24,39,.23)}.hero-sub{max-width:730px;margin-top:28px;color:#53627a;font-size:clamp(1.02rem,2vw,1.2rem);line-height:1.62}.hero-sub strong{color:var(--text)}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}.hero-panel{justify-self:end;width:min(100%,400px);padding:22px;border:1px solid var(--line-strong);border-radius:24px;background:rgba(255,255,255,.84);box-shadow:var(--shadow);transform:rotate(1deg);transition:transform .3s ease,border-color .3s ease}.hero-panel:hover{transform:translateY(-5px) rotate(0);border-color:#bcc7d7}.panel-top{display:flex;justify-content:space-between;gap:10px;color:#7b889b;font:500 .67rem/1 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.status{color:#138f81}.panel-title{margin-top:23px;font:700 1.45rem Syne,sans-serif;letter-spacing:-.035em}.panel-copy{margin-top:7px;color:var(--muted);font-size:.88rem}.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}.panel-stat{padding:13px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(180deg,#fff,#f7f9fc)}.panel-stat b{display:block;font:800 1.12rem Syne,sans-serif}.panel-stat span{display:block;margin-top:2px;color:var(--muted-2);font-size:.66rem}
+    .hero-name{display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:100%;font:800 clamp(2.9rem,8.7vw,8.7rem)/.84 Syne,sans-serif;letter-spacing:-.072em;white-space:nowrap}.hero-name>span{display:block;white-space:nowrap;max-width:100%}.hero-name-ghost{color:transparent;-webkit-text-stroke:1px rgba(16,24,39,.23)}.hero-sub{max-width:730px;margin-top:28px;color:#53627a;font-size:clamp(1.02rem,2vw,1.2rem);line-height:1.62}.hero-sub strong{color:var(--text)}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}.hero-panel{justify-self:end;width:min(100%,400px);padding:22px;border:1px solid var(--line-strong);border-radius:24px;background:rgba(255,255,255,.84);box-shadow:var(--shadow);transform:rotate(1deg);transition:transform .3s ease,border-color .3s ease}.hero-panel:hover{transform:translateY(-5px) rotate(0);border-color:#bcc7d7}.panel-top{display:flex;justify-content:space-between;gap:10px;color:#7b889b;font:500 .67rem/1 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.status{color:#138f81}.panel-title{margin-top:23px;font:700 1.45rem Syne,sans-serif;letter-spacing:-.035em}.panel-copy{margin-top:7px;color:var(--muted);font-size:.88rem}.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:19px}.panel-stat{padding:13px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(180deg,#fff,#f7f9fc)}.panel-stat b{display:block;font:800 1.12rem Syne,sans-serif}.panel-stat span{display:block;margin-top:2px;color:var(--muted-2);font-size:.66rem}
     /* About */
     .about-top{display:grid;grid-template-columns:1.08fr .92fr;gap:42px}.lead-copy{color:#4d5d75;font-size:1.03rem;line-height:1.86}.lead-copy strong{color:var(--text)}.identity-card{padding:26px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow-soft)}.identity-card h3{font:700 1.05rem Syne,sans-serif}.identity-list{display:grid;gap:14px;margin-top:18px}.identity-item{display:flex;gap:12px;align-items:flex-start;color:#647289;font-size:.87rem}.identity-item i{margin-top:3px;color:var(--accent)}.identity-item strong{color:var(--text)}.marquee{overflow:hidden;margin-top:42px;padding:14px 0;border-block:1px solid var(--line);mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}.marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite}.marquee-track span,.marquee-track b{padding-right:31px;font:500 .68rem/1 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.marquee-track span{color:#9aa6b7}.marquee-track b{color:#647289}@keyframes marquee{to{transform:translateX(-50%)}}
     /* Toolkit */
@@ -52,8 +52,192 @@
     .contact{padding-top:92px}.contact-box{padding:42px;border:1px solid var(--line-strong);border-radius:28px;background:linear-gradient(145deg,#fff,#f4f6fb);box-shadow:var(--shadow)}.contact-box h2{margin-top:15px;font:800 clamp(2.8rem,6vw,5.5rem)/.9 Syne,sans-serif;letter-spacing:-.07em}.contact-box h2 span{color:var(--accent)}.contact-box>p{max-width:690px;margin-top:18px;color:#627087;font-size:.98rem}.contact-row{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:30px}.email{font:700 clamp(1rem,2vw,1.25rem) Syne,sans-serif;letter-spacing:-.02em}.socials{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.social{display:inline-flex;align-items:center;gap:7px;padding:9px 11px;border:1px solid var(--line);border-radius:11px;background:#fff;color:#596980;font-size:.72rem;font-weight:800;transition:.2s ease}.social:hover{transform:translateY(-2px);border-color:#c6d1de;color:var(--text)}
     footer{padding:28px 0 46px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#8996a9;font-size:.72rem}.toast{position:fixed;right:20px;bottom:20px;z-index:70;max-width:min(360px,calc(100% - 40px));padding:12px 15px;border:1px solid var(--line-strong);border-radius:13px;background:rgba(255,255,255,.96);box-shadow:var(--shadow);color:#526178;font-size:.76rem;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s ease}.toast.show{opacity:1;transform:none}
     @media(max-width:980px){.nav-links{display:none}.hamb{display:flex}.mobile-menu{display:block}.hero-layout,.about-top,.cert-layout{grid-template-columns:1fr}.hero-panel{justify-self:start;max-width:480px}.stack-grid{grid-template-columns:repeat(2,1fr)}.role{grid-template-columns:32px 1fr}.role-date{text-align:left;grid-column:2}.contact-row{flex-direction:column;align-items:flex-start}.socials{justify-content:flex-start}}
-    @media(max-width:720px){section{padding:86px 0}.container,.nav-inner,.mobile-menu-inner{width:min(calc(100% - 28px),var(--max))}.hero{padding:114px 0 65px}.hero-grid{background-size:48px 48px}h1{font-size:clamp(3.25rem,17vw,6rem)}.hero-sub{font-size:.95rem}.hero-panel{width:100%;padding:19px}.section-head{display:block;margin-bottom:31px}.section-note{margin-top:13px}.section-head h2{font-size:clamp(2.2rem,11vw,3.4rem)}.stack-grid,.projects{grid-template-columns:1fr}.project.featured{grid-column:span 1}.project{padding:20px}.contact-box{padding:27px 20px;border-radius:22px}.contact-box h2{font-size:clamp(2.55rem,13vw,4rem)}.email{font-size:1rem}.role{padding:15px 0}.marquee-track{animation-duration:22s}}
+    @media(max-width:720px){section{padding:86px 0}.container,.nav-inner,.mobile-menu-inner{width:min(calc(100% - 28px),var(--max))}.hero{padding:114px 0 65px}.hero-grid{background-size:48px 48px} .hero-name{font-size:clamp(3rem,15vw,5.5rem);line-height:.86;letter-spacing:-.068em}.hero-sub{font-size:.95rem}.hero-panel{width:100%;padding:19px}.section-head{display:block;margin-bottom:31px}.section-note{margin-top:13px}.section-head h2{font-size:clamp(2.2rem,11vw,3.4rem)}.stack-grid,.projects{grid-template-columns:1fr}.project.featured{grid-column:span 1}.project{padding:20px}.contact-box{padding:27px 20px;border-radius:22px}.contact-box h2{font-size:clamp(2.55rem,13vw,4rem)}.email{font-size:1rem}.role{padding:15px 0}.marquee-track{animation-duration:22s}}
+    @media(max-width:480px){
+      .hero{padding-top:104px;padding-bottom:56px}
+      .hero-name{font-size:clamp(2.85rem,15vw,4.5rem);line-height:.88;letter-spacing:-.064em}
+      .hero-kicker{font-size:.62rem;padding:7px 9px;margin-bottom:18px}
+      .hero-sub{font-size:.92rem;line-height:1.58;margin-top:22px}
+      .hero-actions{margin-top:25px}
+      .hero-actions .btn{flex:1 1 100%;width:100%}
+      .panel-grid{grid-template-columns:1fr 1fr}
+      .section-head h2{line-height:.98}
+      .section-note{font-size:.84rem}
+    }
+    @media(max-width:360px){
+      .container,.nav-inner,.mobile-menu-inner{width:calc(100% - 24px)}
+      .hero-name{font-size:clamp(2.62rem,14.8vw,3.45rem);letter-spacing:-.062em}
+      .hero-panel{padding:16px;border-radius:20px}
+      .panel-grid{gap:7px}
+      .panel-stat{padding:11px}
+      .panel-stat span{font-size:.62rem}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-orb,.pulse,.marquee-track{animation:none}.btn,.stack-card,.project,.cert,.social{transition:none}}
+    /* Targeted layout safeguards */
+    .hero-content,.hero-layout>*,.project,.role,.contact-box,.identity-card,.cert-layout,.stack-grid>*{min-width:0}
+    .hero-sub,.panel-copy,.section-note,.lead-copy,.project p,.role-main p,.company,.cert p,.identity-item,.contact-box p,.social{overflow-wrap:anywhere;word-break:normal}
+    .hero-actions,.project-actions,.contact-row,.socials{min-width:0}
+    .hero-actions .btn,.project-actions .mini-btn,.social{max-width:100%}
+    .hero-name + .hero-sub{max-width:690px}
+    @media(max-width:480px){
+      .hero-layout{gap:34px}
+      .hero-name{width:100%;}
+      .hero-name>span{display:block;}
+    }
+    @media(max-width:360px){
+      .hero-layout{gap:30px}
+      .hero-name{font-size:clamp(2.55rem,14.6vw,3.2rem);}
+    }
+    /* Responsive hardening: prevent clipping/overflow while preserving the visual system. */
+    html{overflow-x:hidden}
+    body{min-width:0;overflow-x:hidden}
+    main,section,.container,.nav-inner,.mobile-menu-inner{min-width:0}
+    .section-head>*,.hero-layout>*,.about-top>*,.stack-grid>*,.projects>*,.role-main,.cert-layout>*,.cert>*,.contact-row>*,footer>*{min-width:0}
+    .hero-layout,.about-top,.stack-grid,.projects,.cert-layout,.contact-row{min-width:0}
+    .hero-layout > *, .about-top > *, .stack-grid > *, .projects > *, .cert-layout > *, .contact-row > *{min-width:0}
+    .hero-name{overflow:visible}
+
+    h1,h2,h3,h4,p,.hero-sub,.section-note,.lead-copy,.panel-copy,.role-main p,.cert-name,.cert-issuer,.project p,.contact-box>p,.email{overflow-wrap:anywhere;word-break:normal}
+    .hero-panel,.identity-card,.stack-card,.project,.cert,.contact-box{max-width:100%}
+    .btn,.mini-btn,.social{min-height:44px}
+    .hero-actions .btn,.project-actions .mini-btn,.socials .social{max-width:100%}
+    .hero-actions,.project-actions,.socials{min-width:0}
+    .socials .social,.project-actions .mini-btn{white-space:normal;text-align:center}
+    .panel-top{flex-wrap:wrap}
+    .role-date{max-width:100%;white-space:normal}
+    .cert{min-height:72px}
+    .cert-date{white-space:nowrap}
+    .marquee{max-width:100vw}
+
+    @media(max-width:1100px){
+      .hero-layout{grid-template-columns:1.05fr .95fr;gap:38px}
+      .section-head{gap:24px}
+      .section-head h2{font-size:clamp(2.45rem,5.3vw,4.2rem)}
+      h1{font-size:clamp(4.1rem,8.2vw,7.2rem)}
+    }
+
+    @media(max-width:980px){
+      .nav-inner{height:72px}
+      .hero{padding-top:104px}
+      .hero-layout{gap:30px;align-items:start}
+      .hero-panel{width:100%;transform:none}
+      .hero-panel:hover{transform:translateY(-3px)}
+      .contact-row{align-items:stretch}
+      .email{display:block;max-width:100%}
+      .socials{width:100%}
+    }
+
+    @media(max-width:720px){
+      section{padding:76px 0;scroll-margin-top:72px}
+      .container,.nav-inner,.mobile-menu-inner{width:calc(100% - 28px)}
+      .nav-inner{height:68px}
+      .hamb{width:42px;height:42px}
+      .mobile-menu-inner{padding-bottom:14px}
+      .hero{min-height:auto;padding:98px 0 56px}
+      .hero-layout{gap:34px}
+      h1{font-size:clamp(3rem,16vw,5rem);line-height:.88;letter-spacing:-.075em}
+      .hero-kicker{max-width:100%;white-space:normal;line-height:1.35}
+      .hero-sub{margin-top:22px;font-size:.93rem}
+      .hero-actions{margin-top:26px;gap:8px}
+      .hero-actions .btn{flex:1 1 150px}
+      .hero-panel{padding:18px;border-radius:20px}
+      .panel-title{font-size:1.28rem}
+      .panel-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .panel-stat{padding:12px}
+      .panel-stat b{font-size:1rem}
+      .panel-stat span{font-size:.64rem;line-height:1.45}
+      .section-head{margin-bottom:28px}
+      .section-head h2{font-size:clamp(2.1rem,10.5vw,3.25rem);line-height:.98}
+      .section-note{font-size:.86rem;line-height:1.62}
+      .lead-copy{font-size:.96rem;line-height:1.76}
+      .about-top{gap:24px}
+      .identity-card{padding:21px}
+      .stack-card,.project{padding:19px}
+      .project h3{font-size:1.38rem}
+      .project p{font-size:.86rem;line-height:1.7}
+      .project-actions{align-items:stretch}
+      .project-actions .mini-btn{flex:1 1 145px}
+      .role{grid-template-columns:26px minmax(0,1fr);gap:13px;padding:14px 0}
+      .timeline::before{left:12px}
+      .role-dot{width:8px;height:8px;margin-top:7px}
+      .role-date{grid-column:2;font-size:.63rem;margin-top:-5px;text-align:left}
+      .cert-layout{gap:12px}
+      .cert{grid-template-columns:minmax(0,1fr);gap:7px;padding:15px}
+      .cert-date{justify-self:start}
+      .cert-highlight{padding:21px}
+      .cert-highlight .big{font-size:4rem}
+      .contact{padding-top:74px}
+      .contact-box{padding:26px 18px;border-radius:21px}
+      .contact-box h2{font-size:clamp(2.45rem,12.5vw,3.9rem);line-height:.94}
+      .contact-box>p{font-size:.9rem;line-height:1.65}
+      .contact-row{gap:20px;margin-top:25px}
+      .email{font-size:clamp(.92rem,4.5vw,1.08rem);line-height:1.35}
+      .socials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+      .social{justify-content:center;padding:10px 9px}
+      footer{font-size:.67rem;padding-top:24px}
+      .toast{right:14px;bottom:14px;max-width:calc(100% - 28px)}
+    }
+
+    @media(max-width:430px){
+      .container,.nav-inner,.mobile-menu-inner{width:calc(100% - 24px)}
+      section{padding:68px 0}
+      .hero{padding:92px 0 48px}
+      .hero-layout{gap:28px}
+      h1{font-size:clamp(2.8rem,15.5vw,4.5rem)}
+      .hero-actions{display:grid;grid-template-columns:1fr}
+      .hero-actions .btn{width:100%}
+      .panel-grid{grid-template-columns:1fr 1fr;gap:7px}
+      .panel-stat{min-height:72px}
+      .stack-grid{gap:10px}
+      .project-actions{display:grid;grid-template-columns:1fr}
+      .project-actions .mini-btn{width:100%}
+      .socials{grid-template-columns:1fr}
+      .eyebrow{font-size:.66rem;letter-spacing:.11em}
+      .section-note{margin-top:11px}
+      .cert-name{font-size:.84rem}
+      .cert-issuer{font-size:.68rem;line-height:1.5}
+    }
+
+    @media(max-width:350px){
+      .container,.nav-inner,.mobile-menu-inner{width:calc(100% - 20px)}
+      .hero{padding-top:88px}
+      h1{font-size:2.72rem}
+      .hero-kicker{font-size:.62rem;padding:7px 9px}
+      .hero-sub{font-size:.89rem}
+      .panel-title{font-size:1.18rem}
+      .panel-grid{grid-template-columns:1fr}
+      .section-head h2{font-size:2rem}
+    }
+
+    /* Final hero layout safety: keep the name inside its grid column. */
+    .hero-content{container-type:inline-size;min-width:0;width:100%;position:relative;z-index:1}
+    .hero-layout{grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);min-width:0}
+    .hero-name{display:flex;width:100%;max-width:100%;font-size:clamp(3rem,13.5cqw,8.7rem);line-height:.86;letter-spacing:-.075em;white-space:nowrap;overflow:visible}
+    .hero-name>span{display:block;width:max-content;max-width:100%;white-space:nowrap}
+    .hero-name-ghost{-webkit-text-stroke:1px rgba(16,24,39,.23)}
+
+    @media(max-width:1100px){
+      .hero-layout{grid-template-columns:minmax(0,1.05fr) minmax(290px,.95fr);gap:38px}
+      .hero-name{font-size:clamp(3rem,13.2cqw,7rem)}
+    }
+
+    @media(max-width:980px){
+      .hero-layout{grid-template-columns:minmax(0,1fr);gap:30px}
+      .hero-name{font-size:clamp(3.15rem,13.5cqw,5.9rem)}
+      .hero-panel{justify-self:start;width:100%;max-width:480px}
+    }
+
+    @media(max-width:720px){
+      .hero-name{font-size:clamp(2.85rem,14.5cqw,5rem);line-height:.88;letter-spacing:-.068em}
+    }
+
+    @media(max-width:430px){
+      .hero-name{font-size:clamp(2.7rem,14.2cqw,4.45rem);line-height:.9;letter-spacing:-.064em}
+    }
+
+    @media(max-width:360px){
+      .hero-name{font-size:clamp(2.52rem,13.8cqw,3.75rem);letter-spacing:-.06em}
+    }
   </style>
 </head>
 <body>
@@ -81,7 +265,7 @@
       <div class="container hero-layout">
         <div class="hero-content reveal">
           <div class="hero-kicker"><span class="pulse"></span> Founder @ Vyrex Technologies · Building from India</div>
-          <h1>Kushagra<br><span class="hero-name-ghost">Maurya.</span></h1>
+          <h1 class="hero-name"><span>Kushagra</span><span class="hero-name-ghost">Maurya</span></h1>
           <p class="hero-sub">I’m a <strong>3rd-year B.Tech Biotechnology student</strong> who builds full-stack products, works across AI and bioinformatics, contributes to Android open source, and turns ideas into things people can actually use.</p>
           <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <i class="ph ph-arrow-down-right"></i></a><a class="btn btn-soft" href="mailto:dev.kusgr@gmail.com">Start a conversation <i class="ph ph-arrow-up-right"></i></a></div>
         </div>
@@ -123,11 +307,11 @@
       <div class="container">
         <div class="section-head reveal"><div><div class="eyebrow">03 / Selected work</div><h2>Things I’ve<br>actually shipped.</h2></div><p class="section-note">Projects across product development, IoT, biotechnology and Android open source.</p></div>
         <div class="projects">
-          <article class="project featured reveal"><div class="project-top"><span class="project-no">01 / Product · 2026</span><i class="ph ph-play-circle project-icon" aria-hidden="true"></i></div><span class="project-badge">Live product</span><h3>Reelog</h3><p>A unified watch-tracking platform for movies, TV and anime. Built solo across 26+ sequential build cycles with authentication, episode-granular diary logging, half-star ratings, custom lists, public follows, activity feed, comments and a role-gated admin dashboard.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Postgres</span><span class="chip">TMDB</span><span class="chip">AniList</span><span class="chip">Vite</span></div><div class="project-actions"><a class="mini-btn primary" href="https://reelog.in" target="_blank" rel="noopener><i class="ph ph-arrow-up-right"></i> Open product</a><a class="mini-btn" href="#" data-placeholder="Reelog repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
-          <article class="project reveal" style="--delay:.08s"><div class="project-top"><span class="project-no">02 / IoT · 2026</span><i class="ph ph-cpu project-icon" aria-hidden="true"></i></div><span class="project-badge">Monitoring system</span><h3>CellGuard</h3><p>An IoT cell culture room monitoring system built with a simulated ESP32 in Wokwi, a Node.js/Express backend deployed on Render, Supabase storage and a Next.js dashboard for real-time monitoring.</p><div class="chips"><span class="chip">ESP32</span><span class="chip">Wokwi</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Render</span><span class="chip">Supabase</span><span class="chip">Next.js</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="CellGuard project link"><i class="ph ph-arrow-up-right"></i> Project details</a></div></article>
-          <article class="project reveal" style="--delay:.12s"><div class="project-top"><span class="project-no">03 / Product · 2026</span><i class="ph ph-chart-line-up project-icon" aria-hidden="true"></i></div><span class="project-badge">Student productivity</span><h3>Campus Portal</h3><p>Student-first attendance tracking that turns raw attendance into something you can plan. Includes real-time percentages, target predictions, classrooms, member views, CSV exports, email verification, password recovery and RLS-backed auth.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Supabase Auth</span><span class="chip">PostgreSQL</span><span class="chip">RLS</span></div><div class="project-actions"><a class="mini-btn" href="https://campus-portal-web.lovable.app" target="_blank" rel="noopener><i class="ph ph-arrow-up-right"></i> Open project</a><a class="mini-btn" href="#" data-placeholder="Campus Portal repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
+          <article class="project featured reveal"><div class="project-top"><span class="project-no">01 / Product · 2026</span><i class="ph ph-play-circle project-icon" aria-hidden="true"></i></div><span class="project-badge">Live product</span><h3>Reelog</h3><p>A unified watch-tracking platform for movies, TV and anime. Built solo across 26+ sequential build cycles with authentication, episode-granular diary logging, half-star ratings, custom lists, public follows, activity feed, comments and a role-gated admin dashboard.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Postgres</span><span class="chip">TMDB</span><span class="chip">AniList</span><span class="chip">Vite</span></div><div class="project-actions"><a class="mini-btn primary" href="https://reelog.in/u/kusgr" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i> Open product</a><a class="mini-btn" href="#" data-placeholder="Reelog repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
+          <article class="project reveal" style="--delay:.08s"><div class="project-top"><span class="project-no">02 / IoT · 2026</span><i class="ph ph-cpu project-icon" aria-hidden="true"></i></div><span class="project-badge">Monitoring system</span><h3>CellGuard</h3><p>An IoT cell culture room monitoring system built with a simulated ESP32 in Wokwi, a Node.js/Express backend deployed on Render, Supabase storage and a Next.js dashboard for real-time monitoring.</p><div class="chips"><span class="chip">ESP32</span><span class="chip">Wokwi</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Render</span><span class="chip">Supabase</span><span class="chip">Next.js</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="CellGuard project link" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i> Project details</a></div></article>
+          <article class="project reveal" style="--delay:.12s"><div class="project-top"><span class="project-no">03 / Product · 2026</span><i class="ph ph-chart-line-up project-icon" aria-hidden="true"></i></div><span class="project-badge">Student productivity</span><h3>Campus Portal</h3><p>Student-first attendance tracking that turns raw attendance into something you can plan. Includes real-time percentages, target predictions, classrooms, member views, CSV exports, email verification, password recovery and RLS-backed auth.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Supabase Auth</span><span class="chip">PostgreSQL</span><span class="chip">RLS</span></div><div class="project-actions"><a class="mini-btn" href="https://campus-portal-web.lovable.app" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i> Open project</a><a class="mini-btn" href="#" data-placeholder="Campus Portal repository link"><i class="ph ph-github-logo"></i> Repository</a></div></article>
           <article class="project reveal" style="--delay:.16s"><div class="project-top"><span class="project-no">04 / Android OSS</span><i class="ph ph-device-mobile project-icon" aria-hidden="true"></i></div><span class="project-badge">Open source</span><h3>OctaviOS 2.7 · X00TD</h3><p>Supported the Android 11-based OctaviOS 2.7 release for Zenfone Max Pro M1 through QA, bug reporting, kernel compatibility verification, ROM stability validation and end-user recovery troubleshooting.</p><div class="chips"><span class="chip">Android 11</span><span class="chip">QA</span><span class="chip">Kernel</span><span class="chip">GApps</span><span class="chip">Fastboot</span></div><div class="project-actions"><a class="mini-btn" href="#" data-placeholder="OctaviOS contribution link"><i class="ph ph-arrow-up-right"></i> Contribution details</a></div></article>
-          <article class="project reveal" style="--delay:.20s"><div class="project-top"><span class="project-no">05 / Biotechnology</span><i class="ph ph-flask project-icon" aria-hidden="true"></i></div><span class="project-badge">B.Tech mini project</span><h3>Homemade Vitamin E Face Serum</h3><p>Formulated and evaluated a homemade Vitamin E face serum using Vitamin E capsules, aloe vera gel, glycerine and rose water. Documented preparation, texture, color, absorption, benefits and safety precautions.</p><div class="chips"><span class="chip">Biotechnology</span><span class="chip">Cosmetic formulation</span><span class="chip">Lab work</span><span class="chip">Teamwork</span></div><div class="project-actions"><a class="mini-btn" href="https://github.com/kusgr/portfolio/blob/main/MINI-PROJECT.pdf" target="_blank" rel="noopener><i class="ph ph-file-pdf"></i> Report</a></div></article>
+          <article class="project reveal" style="--delay:.20s"><div class="project-top"><span class="project-no">05 / Biotechnology</span><i class="ph ph-flask project-icon" aria-hidden="true"></i></div><span class="project-badge">B.Tech mini project</span><h3>Homemade Vitamin E Face Serum</h3><p>Formulated and evaluated a homemade Vitamin E face serum using Vitamin E capsules, aloe vera gel, glycerine and rose water. Documented preparation, texture, color, absorption, benefits and safety precautions.</p><div class="chips"><span class="chip">Biotechnology</span><span class="chip">Cosmetic formulation</span><span class="chip">Lab work</span><span class="chip">Teamwork</span></div><div class="project-actions"><a class="mini-btn" href="https://github.com/kusgr/portfolio/blob/main/MINI-PROJECT.pdf" target="_blank" rel="noopener noreferrer"><i class="ph ph-file-pdf"></i> Report</a></div></article>
         </div>
       </div>
     </section>
@@ -186,7 +370,7 @@
       hamb.addEventListener('click',()=>setMenu(hamb.getAttribute('aria-expanded')!=='true')); document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>setMenu(false))); window.addEventListener('resize',()=>{if(innerWidth>980)setMenu(false)},{passive:true});
       const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches; const observer=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}})},{threshold:.08,rootMargin:'0px 0px -25px'}); document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
       let toastTimer; const showToast=t=>{toast.textContent=t+' — add the real URL when ready.';toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),2600)};
-      document.querySelectorAll('[data-placeholder]').forEach(link=>link.addEventListener('click',e=>{e.preventDefault();showToast(link.dataset.placeholder)}));
+      document.querySelectorAll('[data-placeholder][href="#"]').forEach(link=>link.addEventListener('click',e=>{e.preventDefault();showToast(link.dataset.placeholder)}));
       if(reduced) document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
     })();
   </script>
